@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "9a96b511982bf148",
+    "type": "split",
+    "children": [
+      {
+        "id": "9096f4aa133316d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "39bf8afb206487ca",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "docs/Stages/Workflow.canvas",
+                "viewState": {
+                  "x": 1593.5,
+                  "y": 740,
+                  "zoom": -1.4772339844344757
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c8b681a36b59270e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3584b92fabcc5354",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d51c4a2ed9f0f1f5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "28c4049f71624679",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "86c4e354b5a53f1a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9e12736062f4bc28",
+    "type": "split",
+    "children": [
+      {
+        "id": "d6d5ce3ac0de4d61",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "184ac545a0a9df96",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/Stages/Workflow.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "944856fbfef53b08",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/Stages/Workflow.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1f1b0afecf2ff0cf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "aca39367797435a7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/Stages/Workflow.canvas"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d51c4a2ed9f0f1f5",
+  "lastOpenFiles": [
+    "README.md",
+    "Stages/Workflow.md",
+    "docs"
+  ]
+}
