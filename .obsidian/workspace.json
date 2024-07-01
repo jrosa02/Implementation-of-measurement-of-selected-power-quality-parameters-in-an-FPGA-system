@@ -15,8 +15,8 @@
               "state": {
                 "file": "docs/Stages/Workflow.canvas",
                 "viewState": {
-                  "x": 1593.5,
-                  "y": 740,
+                  "x": -222.21450398489978,
+                  "y": 782.0753806627517,
                   "zoom": -1.4772339844344757
                 }
               }
@@ -72,7 +72,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "9e12736062f4bc28",
@@ -149,10 +149,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d51c4a2ed9f0f1f5",
+  "active": "39bf8afb206487ca",
   "lastOpenFiles": [
+    "Matlab_float_model/work/SignalProcessing.slx.bak",
+    "Matlab_float_model/work/SignalProcessing.slx.autosave",
+    "Matlab_float_model/work/untitled.asv",
+    "Matlab_float_model/work/cache/slprj/sim/varcache/SignalProcessing/tmwinternal/simulink_cache.xml",
+    "Matlab_float_model/work/cache/slprj/sim/varcache/SignalProcessing/tmwinternal",
+    "Matlab_float_model/work/cache/SignalProcessing.slxc",
+    "Matlab_float_model/work/cache/slprj/sim/varcache/SignalProcessing/varInfo.mat",
+    "Matlab_float_model/work/cache/slprj/sim/varcache/SignalProcessing/checksumOfCache.mat",
+    "Matlab_float_model/work/cache/slprj/sim/varcache/SignalProcessing",
+    "Matlab_float_model/work/cache/slprj/sim/varcache",
+    "Matlab_float_model/work/cache/slprj/sim",
     "README.md",
-    "Stages/Workflow.md",
-    "docs"
+    "Stages/Workflow.md"
   ]
 }
