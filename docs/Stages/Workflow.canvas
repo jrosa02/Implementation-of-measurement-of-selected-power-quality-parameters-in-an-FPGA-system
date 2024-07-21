@@ -1,16 +1,16 @@
 {
 	"nodes":[
-		{"id":"8bf9cec83fb8607b","type":"file","file":"docs/Stages/Matlab FFT model.md","x":85,"y":95,"width":275,"height":225},
+		{"id":"8bf9cec83fb8607b","type":"file","file":"docs/Stages/Matlab fp FFT model.md","x":-440,"y":-320,"width":800,"height":640},
 		{"id":"ee1b5dbf8cfb8ab8","type":"file","file":"docs/Stages/Hardware components.md","x":85,"y":420,"width":275,"height":220},
 		{"id":"91e084f92cd29f7f","type":"file","file":"docs/Stages/Assemble Engineering model.md","x":480,"y":420,"width":260,"height":220},
 		{"id":"991e8792bb999fd9","type":"file","file":"docs/Stages/peripheral drivers in cpp.md","x":486,"y":740,"width":254,"height":220},
 		{"id":"cfba5a3a1f86d29f","type":"file","file":"docs/Stages/Main architecture of software.md","x":85,"y":1120,"width":275,"height":240},
 		{"id":"fd782956534a85e7","type":"file","file":"docs/Stages/Simulated software prototype.md","x":900,"y":1083,"width":300,"height":317},
 		{"id":"79bffd2e868ad989","type":"file","file":"docs/Stages/Real world heteronomous system.md","x":2680,"y":400,"width":422,"height":220},
-		{"id":"d58fa1762e99c6e3","type":"file","file":"docs/Stages/Matlab FFT fixed point model.md","x":1960,"y":80,"width":360,"height":225},
 		{"id":"befceaa4174bada8","type":"file","file":"docs/Stages/Real world software prototype.md","x":1960,"y":405,"width":360,"height":220},
 		{"id":"69440080d044ea1e","type":"file","file":"docs/Stages/peripheral hardware drivers.md","x":1960,"y":725,"width":360,"height":220},
-		{"id":"ecbabe53d75d8f1c","x":1960,"y":1083,"width":360,"height":280,"type":"file","file":"docs/Stages/Simulated software with hardware interactions.md"}
+		{"id":"ecbabe53d75d8f1c","type":"file","file":"docs/Stages/Simulated software with hardware interactions.md","x":1960,"y":1083,"width":360,"height":280},
+		{"id":"d58fa1762e99c6e3","type":"file","file":"docs/Stages/Matlab FFT fixed point model.md","x":1960,"y":-320,"width":360,"height":225}
 	],
 	"edges":[
 		{"id":"3934af9094d3704f","fromNode":"8bf9cec83fb8607b","fromSide":"right","toNode":"d58fa1762e99c6e3","toSide":"left"},
