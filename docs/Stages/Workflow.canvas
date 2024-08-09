@@ -1,31 +1,19 @@
 {
 	"nodes":[
-		{"id":"8bf9cec83fb8607b","type":"file","file":"docs/Stages/Matlab fp FFT model.md","x":-440,"y":-320,"width":800,"height":640},
-		{"id":"ee1b5dbf8cfb8ab8","type":"file","file":"docs/Stages/Hardware components.md","x":85,"y":420,"width":275,"height":220},
+		{"id":"398b0af419cf357d","x":-314,"y":800,"width":400,"height":400,"type":"file","file":"All FPGA basic components.md"},
 		{"id":"91e084f92cd29f7f","type":"file","file":"docs/Stages/Assemble Engineering model.md","x":480,"y":420,"width":260,"height":220},
-		{"id":"991e8792bb999fd9","type":"file","file":"docs/Stages/peripheral drivers in cpp.md","x":486,"y":740,"width":254,"height":220},
-		{"id":"cfba5a3a1f86d29f","type":"file","file":"docs/Stages/Main architecture of software.md","x":85,"y":1120,"width":275,"height":240},
-		{"id":"fd782956534a85e7","type":"file","file":"docs/Stages/Simulated software prototype.md","x":900,"y":1083,"width":300,"height":317},
 		{"id":"79bffd2e868ad989","type":"file","file":"docs/Stages/Real world heteronomous system.md","x":2680,"y":400,"width":422,"height":220},
 		{"id":"befceaa4174bada8","type":"file","file":"docs/Stages/Real world software prototype.md","x":1960,"y":405,"width":360,"height":220},
-		{"id":"69440080d044ea1e","type":"file","file":"docs/Stages/peripheral hardware drivers.md","x":1960,"y":725,"width":360,"height":220},
-		{"id":"ecbabe53d75d8f1c","type":"file","file":"docs/Stages/Simulated software with hardware interactions.md","x":1960,"y":1083,"width":360,"height":280},
-		{"id":"d58fa1762e99c6e3","type":"file","file":"docs/Stages/Matlab FFT fixed point model.md","x":1960,"y":-320,"width":360,"height":225}
+		{"id":"d58fa1762e99c6e3","type":"file","file":"docs/Stages/Matlab FFT fixed point model.md","x":1960,"y":-320,"width":360,"height":225},
+		{"id":"8bf9cec83fb8607b","type":"file","file":"docs/Stages/Matlab fp FFT model.md","x":-314,"y":-480,"width":800,"height":640},
+		{"id":"ee1b5dbf8cfb8ab8","type":"file","file":"docs/Stages/Hardware components.md","x":-314,"y":420,"width":275,"height":220}
 	],
 	"edges":[
 		{"id":"3934af9094d3704f","fromNode":"8bf9cec83fb8607b","fromSide":"right","toNode":"d58fa1762e99c6e3","toSide":"left"},
 		{"id":"79a2fecfe84bfc37","fromNode":"ee1b5dbf8cfb8ab8","fromSide":"right","toNode":"91e084f92cd29f7f","toSide":"left"},
-		{"id":"7af210b6f928a64a","fromNode":"ee1b5dbf8cfb8ab8","fromSide":"right","toNode":"991e8792bb999fd9","toSide":"left"},
-		{"id":"feb352c22ee91de3","fromNode":"991e8792bb999fd9","fromSide":"right","toNode":"69440080d044ea1e","toSide":"left"},
-		{"id":"a2b08d870c36f42d","fromNode":"cfba5a3a1f86d29f","fromSide":"right","toNode":"fd782956534a85e7","toSide":"left"},
-		{"id":"97f0c6ac01d7652b","fromNode":"991e8792bb999fd9","fromSide":"right","toNode":"fd782956534a85e7","toSide":"left"},
 		{"id":"ccbfaef8f49f7ba7","fromNode":"91e084f92cd29f7f","fromSide":"right","toNode":"befceaa4174bada8","toSide":"left"},
-		{"id":"6d98f90d38491792","fromNode":"fd782956534a85e7","fromSide":"right","toNode":"befceaa4174bada8","toSide":"left"},
 		{"id":"e5ebf52b0e433918","fromNode":"8bf9cec83fb8607b","fromSide":"right","toNode":"befceaa4174bada8","toSide":"left"},
 		{"id":"7f6bc4b10910de2f","fromNode":"befceaa4174bada8","fromSide":"right","toNode":"79bffd2e868ad989","toSide":"left"},
-		{"id":"0d0ce84597bfa1fc","fromNode":"d58fa1762e99c6e3","fromSide":"right","toNode":"79bffd2e868ad989","toSide":"left"},
-		{"id":"be08db42d7995c8c","fromNode":"69440080d044ea1e","fromSide":"right","toNode":"79bffd2e868ad989","toSide":"left"},
-		{"id":"8d23564b9c2e7377","fromNode":"fd782956534a85e7","fromSide":"right","toNode":"ecbabe53d75d8f1c","toSide":"left"},
-		{"id":"e793377548e79e4e","fromNode":"ecbabe53d75d8f1c","fromSide":"right","toNode":"79bffd2e868ad989","toSide":"left"}
+		{"id":"0d0ce84597bfa1fc","fromNode":"d58fa1762e99c6e3","fromSide":"right","toNode":"79bffd2e868ad989","toSide":"left"}
 	]
 }
