@@ -2,7 +2,7 @@
 ## Makefile generated for component 'rtwshared'. 
 ## 
 ## Makefile     : rtwshared.mk
-## Generated on : Fri Aug 09 10:07:41 2024
+## Generated on : Sun Aug 11 11:33:02 2024
 ## Final product: ./rtwshared.lib
 ## Product type : static library
 ## 
@@ -184,7 +184,7 @@ DEFINES = $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS)
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/slprj/sim/_sharedutils/MWDSPCG_FFT_DblLen_Z.c $(START_DIR)/slprj/sim/_sharedutils/MWDSPCG_FFT_Interleave_R2BR_D.c $(START_DIR)/slprj/sim/_sharedutils/MWDSPCG_R2DIT_TBLS_Z.c $(START_DIR)/slprj/sim/_sharedutils/rt_nonfinite.c $(START_DIR)/slprj/sim/_sharedutils/sumColumnB_iybGJ3jg.c $(START_DIR)/slprj/sim/_sharedutils/sumColumnB_tFbr2DZL.c
+SRCS = $(START_DIR)/slprj/sim/_sharedutils/MWDSPCG_FFT_DblLen_Z.c $(START_DIR)/slprj/sim/_sharedutils/MWDSPCG_FFT_Interleave_R2BR_D.c $(START_DIR)/slprj/sim/_sharedutils/MWDSPCG_R2DIT_TBLS_Z.c $(START_DIR)/slprj/sim/_sharedutils/rt_nonfinite.c $(START_DIR)/slprj/sim/_sharedutils/sumColumnB_iybGJ3jg.c $(START_DIR)/slprj/sim/_sharedutils/sumColumnB_tFbr2DZL.c $(START_DIR)/slprj/sim/_sharedutils/sumColumnB_jLyxf5Pt.c
 
 ALL_SRCS = $(SRCS)
 
@@ -192,7 +192,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = MWDSPCG_FFT_DblLen_Z.obj MWDSPCG_FFT_Interleave_R2BR_D.obj MWDSPCG_R2DIT_TBLS_Z.obj rt_nonfinite.obj sumColumnB_iybGJ3jg.obj sumColumnB_tFbr2DZL.obj
+OBJS = MWDSPCG_FFT_DblLen_Z.obj MWDSPCG_FFT_Interleave_R2BR_D.obj MWDSPCG_R2DIT_TBLS_Z.obj rt_nonfinite.obj sumColumnB_iybGJ3jg.obj sumColumnB_tFbr2DZL.obj sumColumnB_jLyxf5Pt.obj
 
 ALL_OBJS = $(OBJS)
 
@@ -410,6 +410,10 @@ sumColumnB_iybGJ3jg.obj : $(START_DIR)/slprj/sim/_sharedutils/sumColumnB_iybGJ3j
 
 
 sumColumnB_tFbr2DZL.obj : $(START_DIR)/slprj/sim/_sharedutils/sumColumnB_tFbr2DZL.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+sumColumnB_jLyxf5Pt.obj : $(START_DIR)/slprj/sim/_sharedutils/sumColumnB_jLyxf5Pt.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 

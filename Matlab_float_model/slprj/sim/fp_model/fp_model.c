@@ -5,7 +5,7 @@
 #include <emmintrin.h>
 #include "MWDSPCG_R2DIT_TBLS_Z.h"
 #include "MWDSPCG_FFT_DblLen_Z.h"
-#include "sumColumnB_tFbr2DZL.h"
+#include "sumColumnB_jLyxf5Pt.h"
 #include "mwmathutil.h"
 #include "fp_model_capi.h"
 #include <string.h>
@@ -71,31 +71,29 @@ MDL_INFO_ID_MODEL_FCN_NAME , 0 , - 1 , ( void * ) "fp_model" } , {
 1 , ( void * ) "fp_model" } , { "fp_model.h" , MDL_INFO_MODEL_FILENAME , 0 ,
 - 1 , ( NULL ) } , { "fp_model.c" , MDL_INFO_MODEL_FILENAME , 0 , - 1 , (
 void * ) "fp_model" } } ; gbqnpvikt43 gbqnpvikt4 = { 0.0 } ; void aisxmr5v0g
-( k0bbvic25x * localDW ) { int32_T i ; for ( i = 0 ; i < 1023 ; i ++ ) {
+( k0bbvic25x * localDW ) { int32_T i ; for ( i = 0 ; i < 255 ; i ++ ) {
 localDW -> gaavansm5h [ i ] = gbqnpvikt4 . P_0 ; } localDW -> egar4djohu = 0
 ; localDW -> funf0lyujt = false ; } void ksgf00li5o ( k0bbvic25x * localDW )
-{ int32_T i ; for ( i = 0 ; i < 1023 ; i ++ ) { localDW -> gaavansm5h [ i ] =
+{ int32_T i ; for ( i = 0 ; i < 255 ; i ++ ) { localDW -> gaavansm5h [ i ] =
 gbqnpvikt4 . P_0 ; } localDW -> egar4djohu = 0 ; localDW -> funf0lyujt =
 false ; } void fp_model ( const real_T * hji2uwxwcd , creal_T fmfow4syn2 [
-1024 ] , real_T * hj11ljezie , hu55tky4es * localB , k0bbvic25x * localDW ) {
-__m128d tmp_p ; creal_T tmp ; real_T tmp_e [ 2 ] ; real_T ai ; real_T bim ;
-real_T brm ; real_T d ; real_T fmliclu24u_p ; real_T sgnbi ; int32_T i ;
-fmliclu24u_p = * hji2uwxwcd ; for ( i = 0 ; i < 1023 - localDW -> egar4djohu
-; i ++ ) { localB -> jvm5tmqx4j_mbvzarwird [ i ] = localDW -> gaavansm5h [
-localDW -> egar4djohu + i ] ; } for ( i = 0 ; i < localDW -> egar4djohu ; i
-++ ) { localB -> jvm5tmqx4j_mbvzarwird [ ( i - localDW -> egar4djohu ) + 1023
-] = localDW -> gaavansm5h [ i ] ; } localB -> jvm5tmqx4j_mbvzarwird [ 1023 ]
-= fmliclu24u_p ; localDW -> gaavansm5h [ localDW -> egar4djohu ] =
-fmliclu24u_p ; localDW -> egar4djohu ++ ; if ( localDW -> egar4djohu >= 1023
-) { localDW -> egar4djohu -= 1023 ; } for ( i = 0 ; i <= 1022 ; i += 2 ) {
-tmp_p = _mm_loadu_pd ( & localB -> jvm5tmqx4j_mbvzarwird [ i ] ) ;
-_mm_storeu_pd ( & localB -> jvm5tmqx4j_mbvzarwird [ i ] , _mm_mul_pd ( tmp_p
-, _mm_loadu_pd ( & hmvp0fi11ko . cgjkkoqvz2 [ i ] ) ) ) ; }
-MWDSPCG_FFT_Interleave_R2BR_D ( & localB -> jvm5tmqx4j_mbvzarwird [ 0U ] , &
-fmfow4syn2 [ 0U ] , 1 , 1024 ) ; MWDSPCG_R2DIT_TBLS_Z ( & fmfow4syn2 [ 0U ] ,
-1 , 1024 , 512 , 0 , & hmvp0fi11ko . ih3f2xjm4c [ 0U ] , 2 , false ) ;
-MWDSPCG_FFT_DblLen_Z ( & fmfow4syn2 [ 0U ] , 1 , 1024 , & hmvp0fi11ko .
-ih3f2xjm4c [ 0U ] , 1 ) ; tmp = sumColumnB_tFbr2DZL ( fmfow4syn2 , 1 ) ;
+256 ] , real_T * hj11ljezie , k0bbvic25x * localDW ) { __m128d tmp_p ;
+creal_T tmp ; real_T pkiy1ca2nh [ 256 ] ; real_T tmp_e [ 2 ] ; real_T ai ;
+real_T bim ; real_T brm ; real_T d ; real_T fmliclu24u_p ; real_T sgnbi ;
+int32_T i ; fmliclu24u_p = * hji2uwxwcd ; for ( i = 0 ; i < 255 - localDW ->
+egar4djohu ; i ++ ) { pkiy1ca2nh [ i ] = localDW -> gaavansm5h [ localDW ->
+egar4djohu + i ] ; } for ( i = 0 ; i < localDW -> egar4djohu ; i ++ ) {
+pkiy1ca2nh [ ( i - localDW -> egar4djohu ) + 255 ] = localDW -> gaavansm5h [
+i ] ; } pkiy1ca2nh [ 255 ] = fmliclu24u_p ; localDW -> gaavansm5h [ localDW
+-> egar4djohu ] = fmliclu24u_p ; localDW -> egar4djohu ++ ; if ( localDW ->
+egar4djohu >= 255 ) { localDW -> egar4djohu -= 255 ; } for ( i = 0 ; i <= 254
+; i += 2 ) { tmp_p = _mm_loadu_pd ( & pkiy1ca2nh [ i ] ) ; _mm_storeu_pd ( &
+pkiy1ca2nh [ i ] , _mm_mul_pd ( tmp_p , _mm_loadu_pd ( & hmvp0fi11ko .
+cgjkkoqvz2 [ i ] ) ) ) ; } MWDSPCG_FFT_Interleave_R2BR_D ( & pkiy1ca2nh [ 0U
+] , & fmfow4syn2 [ 0U ] , 1 , 256 ) ; MWDSPCG_R2DIT_TBLS_Z ( & fmfow4syn2 [
+0U ] , 1 , 256 , 128 , 0 , & hmvp0fi11ko . ih3f2xjm4c [ 0U ] , 2 , false ) ;
+MWDSPCG_FFT_DblLen_Z ( & fmfow4syn2 [ 0U ] , 1 , 256 , & hmvp0fi11ko .
+ih3f2xjm4c [ 0U ] , 1 ) ; tmp = sumColumnB_jLyxf5Pt ( fmfow4syn2 , 1 ) ;
 fmliclu24u_p = fmfow4syn2 [ 0 ] . re ; ai = fmfow4syn2 [ 0 ] . im ; if ( tmp
 . im == 0.0 ) { if ( ai == 0.0 ) { bim = fmliclu24u_p / tmp . re ;
 fmliclu24u_p = 0.0 ; } else if ( fmliclu24u_p == 0.0 ) { bim = 0.0 ;
@@ -127,8 +125,8 @@ rt_ChildPath , int_T rt_ChildMMIIdx , int_T rt_CSTATEIdx ) { ( void ) memset
 _mdlRefSfcnS ) ; if ( ! slIsRapidAcceleratorSimulating ( ) ) {
 slmrRunPluginEvent ( jrnszy5bwy -> _mdlRefSfcnS , "fp_model" ,
 "START_OF_SIM_MODEL_MODELREF_ACCEL_EVENT" ) ; } ( void ) memset ( ( void * )
-localDW , 0 , sizeof ( k0bbvic25x ) ) ; { int32_T i ; for ( i = 0 ; i < 1023
-; i ++ ) { localDW -> gaavansm5h [ i ] = 0.0 ; } }
+localDW , 0 , sizeof ( k0bbvic25x ) ) ; { int32_T i ; for ( i = 0 ; i < 255 ;
+i ++ ) { localDW -> gaavansm5h [ i ] = 0.0 ; } }
 fp_model_InitializeDataMapInfo ( jrnszy5bwy , localDW , sysRanPtr ,
 contextTid ) ; if ( ( rt_ParentMMI != ( NULL ) ) && ( rt_ChildPath != ( NULL
 ) ) ) { rtwCAPI_SetChildMMI ( * rt_ParentMMI , rt_ChildMMIIdx , & (
@@ -189,35 +187,32 @@ mr_fp_model_extractBitFieldFromCellArrayWithOffset ( const mxArray * srcArray
 fieldVal = ( uint_T ) mxGetScalar ( mxGetCell ( mxGetFieldByNumber ( srcArray
 , i , j ) , offset ) ) ; return fieldVal & ( ( 1u << numBits ) - 1u ) ; }
 mxArray * mr_fp_model_GetDWork ( const nt0bd1szwfg * mdlrefDW ) { static
-const char_T * ssDWFieldNames [ 3 ] = { "rtb" , "rtdw" , "NULL->rtzce" , } ;
-mxArray * ssDW = mxCreateStructMatrix ( 1 , 1 , 3 , ssDWFieldNames ) ;
-mr_fp_model_cacheDataAsMxArray ( ssDW , 0 , 0 , ( const void * ) & ( mdlrefDW
--> rtb ) , sizeof ( mdlrefDW -> rtb ) ) ; { static const char_T *
-rtdwDataFieldNames [ 3 ] = { "mdlrefDW->rtdw.gaavansm5h" ,
-"mdlrefDW->rtdw.egar4djohu" , "mdlrefDW->rtdw.funf0lyujt" , } ; mxArray *
-rtdwData = mxCreateStructMatrix ( 1 , 1 , 3 , rtdwDataFieldNames ) ;
-mr_fp_model_cacheDataAsMxArray ( rtdwData , 0 , 0 , ( const void * ) & (
-mdlrefDW -> rtdw . gaavansm5h ) , sizeof ( mdlrefDW -> rtdw . gaavansm5h ) )
-; mr_fp_model_cacheDataAsMxArray ( rtdwData , 0 , 1 , ( const void * ) & (
-mdlrefDW -> rtdw . egar4djohu ) , sizeof ( mdlrefDW -> rtdw . egar4djohu ) )
-; mr_fp_model_cacheDataAsMxArray ( rtdwData , 0 , 2 , ( const void * ) & (
-mdlrefDW -> rtdw . funf0lyujt ) , sizeof ( mdlrefDW -> rtdw . funf0lyujt ) )
-; mxSetFieldByNumber ( ssDW , 0 , 1 , rtdwData ) ; } ( void ) mdlrefDW ;
-return ssDW ; } void mr_fp_model_SetDWork ( nt0bd1szwfg * mdlrefDW , const
-mxArray * ssDW ) { ( void ) ssDW ; ( void ) mdlrefDW ;
-mr_fp_model_restoreDataFromMxArray ( ( void * ) & ( mdlrefDW -> rtb ) , ssDW
-, 0 , 0 , sizeof ( mdlrefDW -> rtb ) ) ; { const mxArray * rtdwData =
-mxGetFieldByNumber ( ssDW , 0 , 1 ) ; mr_fp_model_restoreDataFromMxArray ( (
-void * ) & ( mdlrefDW -> rtdw . gaavansm5h ) , rtdwData , 0 , 0 , sizeof (
-mdlrefDW -> rtdw . gaavansm5h ) ) ; mr_fp_model_restoreDataFromMxArray ( (
-void * ) & ( mdlrefDW -> rtdw . egar4djohu ) , rtdwData , 0 , 1 , sizeof (
-mdlrefDW -> rtdw . egar4djohu ) ) ; mr_fp_model_restoreDataFromMxArray ( (
-void * ) & ( mdlrefDW -> rtdw . funf0lyujt ) , rtdwData , 0 , 2 , sizeof (
-mdlrefDW -> rtdw . funf0lyujt ) ) ; } } void
-mr_fp_model_RegisterSimStateChecksum ( SimStruct * S ) { const uint32_T
-chksum [ 4 ] = { 1225761474U , 2166540473U , 2721222342U , 33396189U , } ;
-slmrModelRefRegisterSimStateChecksum ( S , "fp_model" , & chksum [ 0 ] ) ; }
-mxArray * mr_fp_model_GetSimStateDisallowedBlocks ( ) { return ( NULL ) ; }
+const char_T * ssDWFieldNames [ 3 ] = { "NULL->rtb" , "rtdw" , "NULL->rtzce"
+, } ; mxArray * ssDW = mxCreateStructMatrix ( 1 , 1 , 3 , ssDWFieldNames ) ;
+{ static const char_T * rtdwDataFieldNames [ 3 ] = {
+"mdlrefDW->rtdw.gaavansm5h" , "mdlrefDW->rtdw.egar4djohu" ,
+"mdlrefDW->rtdw.funf0lyujt" , } ; mxArray * rtdwData = mxCreateStructMatrix (
+1 , 1 , 3 , rtdwDataFieldNames ) ; mr_fp_model_cacheDataAsMxArray ( rtdwData
+, 0 , 0 , ( const void * ) & ( mdlrefDW -> rtdw . gaavansm5h ) , sizeof (
+mdlrefDW -> rtdw . gaavansm5h ) ) ; mr_fp_model_cacheDataAsMxArray ( rtdwData
+, 0 , 1 , ( const void * ) & ( mdlrefDW -> rtdw . egar4djohu ) , sizeof (
+mdlrefDW -> rtdw . egar4djohu ) ) ; mr_fp_model_cacheDataAsMxArray ( rtdwData
+, 0 , 2 , ( const void * ) & ( mdlrefDW -> rtdw . funf0lyujt ) , sizeof (
+mdlrefDW -> rtdw . funf0lyujt ) ) ; mxSetFieldByNumber ( ssDW , 0 , 1 ,
+rtdwData ) ; } ( void ) mdlrefDW ; return ssDW ; } void mr_fp_model_SetDWork
+( nt0bd1szwfg * mdlrefDW , const mxArray * ssDW ) { ( void ) ssDW ; ( void )
+mdlrefDW ; { const mxArray * rtdwData = mxGetFieldByNumber ( ssDW , 0 , 1 ) ;
+mr_fp_model_restoreDataFromMxArray ( ( void * ) & ( mdlrefDW -> rtdw .
+gaavansm5h ) , rtdwData , 0 , 0 , sizeof ( mdlrefDW -> rtdw . gaavansm5h ) )
+; mr_fp_model_restoreDataFromMxArray ( ( void * ) & ( mdlrefDW -> rtdw .
+egar4djohu ) , rtdwData , 0 , 1 , sizeof ( mdlrefDW -> rtdw . egar4djohu ) )
+; mr_fp_model_restoreDataFromMxArray ( ( void * ) & ( mdlrefDW -> rtdw .
+funf0lyujt ) , rtdwData , 0 , 2 , sizeof ( mdlrefDW -> rtdw . funf0lyujt ) )
+; } } void mr_fp_model_RegisterSimStateChecksum ( SimStruct * S ) { const
+uint32_T chksum [ 4 ] = { 3518812118U , 2167160336U , 2676322326U ,
+2800240029U , } ; slmrModelRefRegisterSimStateChecksum ( S , "fp_model" , &
+chksum [ 0 ] ) ; } mxArray * mr_fp_model_GetSimStateDisallowedBlocks ( ) {
+return ( NULL ) ; }
 #if defined(_MSC_VER)
 #pragma warning(disable: 4505) //unreferenced local function has been removed
 #endif

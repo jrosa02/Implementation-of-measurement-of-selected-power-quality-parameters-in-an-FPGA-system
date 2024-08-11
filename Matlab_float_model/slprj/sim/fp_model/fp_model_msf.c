@@ -55,14 +55,14 @@ nt0bd1szwfg * ) ssGetDWork ( S , 0 ) ; real_T const * i_lmw3snr4ww = ( real_T
 * ) ssGetInputPortSignal ( S , 0 ) ; creal_T * o_B_2_1 = ( creal_T * )
 ssGetOutputPortSignal ( S , 0 ) ; real_T * o_B_2_2 = ( real_T * )
 ssGetOutputPortSignal ( S , 1 ) ; if ( tid == 0 ) { fp_model ( i_lmw3snr4ww ,
-o_B_2_1 , o_B_2_2 , & ( dw -> rtb ) , & ( dw -> rtdw ) ) ; } } static void
-mdlInitializeSizes ( SimStruct * S ) { if ( ( S -> mdlInfo -> genericFcn != (
-NULL ) ) && ( ! ( S -> mdlInfo -> genericFcn ) ( S ,
-GEN_FCN_CHK_MODELREF_SFUN_HAS_MODEL_BLOCK , - 1 , ( NULL ) ) ) ) { return ; }
-ssSetNumSFcnParams ( S , 0 ) ; ssFxpSetU32BitRegionCompliant ( S , 1 ) ; if (
-S -> mdlInfo -> genericFcn != ( NULL ) ) { _GenericFcn fcn = S -> mdlInfo ->
-genericFcn ; } ssSetRTWGeneratedSFcn ( S , 2 ) ; ssSetNumContStates ( S , 0 )
-; ssSetNumDiscStates ( S , 0 ) ; ssSetSymbolicDimsSupport ( S , true ) ;
+o_B_2_1 , o_B_2_2 , & ( dw -> rtdw ) ) ; } } static void mdlInitializeSizes (
+SimStruct * S ) { if ( ( S -> mdlInfo -> genericFcn != ( NULL ) ) && ( ! ( S
+-> mdlInfo -> genericFcn ) ( S , GEN_FCN_CHK_MODELREF_SFUN_HAS_MODEL_BLOCK ,
+- 1 , ( NULL ) ) ) ) { return ; } ssSetNumSFcnParams ( S , 0 ) ;
+ssFxpSetU32BitRegionCompliant ( S , 1 ) ; if ( S -> mdlInfo -> genericFcn !=
+( NULL ) ) { _GenericFcn fcn = S -> mdlInfo -> genericFcn ; }
+ssSetRTWGeneratedSFcn ( S , 2 ) ; ssSetNumContStates ( S , 0 ) ;
+ssSetNumDiscStates ( S , 0 ) ; ssSetSymbolicDimsSupport ( S , true ) ;
 slmrInitializeIOPortDataVectors ( S , 1 , 2 ) ; if ( ! ssSetNumInputPorts ( S
 , 1 ) ) return ; if ( ! ssSetInputPortMatrixDimensions ( S , 0 , 1 , 1 ) )
 return ; ssSetInputPortDimensionsMode ( S , 0 , FIXED_DIMS_MODE ) ;
@@ -79,7 +79,7 @@ ssSetInputPortRequiredContiguous ( S , 0 , 1 ) ; ssSetInputPortOptimOpts ( S
 , 0 , SS_NOT_REUSABLE_AND_LOCAL ) ; ssSetInputPortOverWritable ( S , 0 ,
 false ) ; ssSetInputPortSampleTime ( S , 0 , 3.3444816053511705E-5 ) ;
 ssSetInputPortOffsetTime ( S , 0 , 0.0 ) ; if ( ! ssSetNumOutputPorts ( S , 2
-) ) return ; if ( ! ssSetOutputPortMatrixDimensions ( S , 0 , 1024 , 1 ) )
+) ) return ; if ( ! ssSetOutputPortMatrixDimensions ( S , 0 , 256 , 1 ) )
 return ; ssSetOutputPortDimensionsMode ( S , 0 , FIXED_DIMS_MODE ) ;
 ssSetOutputPortFrameData ( S , 0 , FRAME_NO ) ; if ( ssGetSimMode ( S ) !=
 SS_SIMMODE_SIZES_CALL_ONLY ) { ssSetOutputPortDataType ( S , 0 , SS_DOUBLE )
@@ -171,9 +171,9 @@ static void mdlStart ( SimStruct * S ) { } static void mdlOutputs ( SimStruct
 creal_T * o_B_2_1 = ( creal_T * ) ssGetOutputPortSignal ( S , 0 ) ; real_T *
 o_B_2_2 = ( real_T * ) ssGetOutputPortSignal ( S , 1 ) ; if ( tid !=
 CONSTANT_TID && tid != PARAMETER_TUNING_TID ) { fp_model ( i_lmw3snr4ww ,
-o_B_2_1 , o_B_2_2 , & ( dw -> rtb ) , & ( dw -> rtdw ) ) ; } } static void
-mdlTerminate ( SimStruct * S ) { nt0bd1szwfg * dw = ( nt0bd1szwfg * )
-ssGetDWork ( S , 0 ) ; dfi4ptkiax ( & ( dw -> rtm ) ) ; return ; }
+o_B_2_1 , o_B_2_2 , & ( dw -> rtdw ) ) ; } } static void mdlTerminate (
+SimStruct * S ) { nt0bd1szwfg * dw = ( nt0bd1szwfg * ) ssGetDWork ( S , 0 ) ;
+dfi4ptkiax ( & ( dw -> rtm ) ) ; return ; }
 #define MDL_CLEANUP_RUNTIME_RESOURCES
 static void mdlCleanupRuntimeResources ( SimStruct * S ) { }
 #if !defined(MDL_SIM_STATE)

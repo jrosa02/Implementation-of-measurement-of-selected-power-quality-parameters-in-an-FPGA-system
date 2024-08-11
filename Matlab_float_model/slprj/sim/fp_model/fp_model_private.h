@@ -109,7 +109,7 @@ void * gblLoggingInterval ;
 #ifndef rtmSetVarNextHitTime
 #define rtmSetVarNextHitTime(rtm, sti, val) ssSetTimeOfNextVarHit((rtm)->_mdlRefSfcnS,  (rtm)->Timing.mdlref_GlobalTID[sti], val)
 #endif
-typedef struct { real_T cgjkkoqvz2 [ 1024 ] ; real_T ih3f2xjm4c [ 768 ] ; }
+typedef struct { real_T cgjkkoqvz2 [ 256 ] ; real_T ih3f2xjm4c [ 192 ] ; }
 hmvp0fi11k ; extern gbqnpvikt43 gbqnpvikt4 ; extern const hmvp0fi11k
 hmvp0fi11ko ;
 #endif
