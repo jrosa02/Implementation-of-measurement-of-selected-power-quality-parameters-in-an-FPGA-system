@@ -16,7 +16,9 @@
                 "file": "docs/Stages/Matlab fp FFT model.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Matlab fp FFT model"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Matlab fp FFT model"
             }
           },
           {
@@ -105,7 +115,9 @@
                 "file": "docs/Stages/Matlab fp FFT model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Matlab fp FFT model"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -126,15 +140,16 @@
               "type": "outline",
               "state": {
                 "file": "docs/Stages/Matlab fp FFT model.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Matlab fp FFT model"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,6 +163,23 @@
   },
   "active": "981830a0256289d7",
   "lastOpenFiles": [
+    "Matlab_float_model/float_model.slx.autosave",
+    "Matlab_float_model/float_model.slx.bak",
+    "Matlab_float_model/main.mlx",
+    "Matlab_float_model/untitled.mlx",
+    "docs/Stages/Matlab FFT fixed point model.md",
+    "docs/images/Matlab_fp_FFT_2024-07-21.png",
+    "docs/Stages/Assemble Engineering model.md",
+    "docs/Stages/Workflow.canvas",
+    "docs/Stages/Simulated software with hardware interactions.md",
+    "docs/Stages/Simulated software prototype.md",
+    "docs/Stages/Real world software prototype.md",
+    "docs/Stages/Real world heteronomous system.md",
+    "docs/Stages/peripheral hardware drivers.md",
+    "docs/Stages/Heteronomous prototype.md",
+    "docs/Stages/Hardware components.md",
+    "docs/Stages/Main architecture of software.md",
+    "docs/Stages/Matlab fp FFT model.md",
     "Matlab_float_model/slprj/_jitprj/sAinnpxBisSPAKVISnVN5uC.mat",
     "Matlab_float_model/slprj/_jitprj/sAinnpxBisSPAKVISnVN5uC.l",
     "Matlab_float_model/slprj/_sfprj/EMLReport/sAinnpxBisSPAKVISnVN5uC.mat",
@@ -155,15 +187,7 @@
     "Matlab_float_model/slprj/_sfprj/precompile/wcdZmqRHKpIhz8oaoYeIED.mat",
     "Matlab_float_model/slprj/_sfprj/precompile/8QSugzKlmYNe9lGmPa6NNB.mat",
     "Matlab_float_model/slprj/_jitprj/sHv9Hj4SUkKBjKIweojdWnG.mat",
-    "Matlab_float_model/slprj/_jitprj/sHv9Hj4SUkKBjKIweojdWnG.l",
-    "Matlab_float_model/slprj/_sfprj/EMLReport/sHv9Hj4SUkKBjKIweojdWnG.mat",
-    "Matlab_float_model/slprj/_sfprj/EMLReport/sHv9Hj4SUkKBjKIweojdWnG",
-    "Matlab_float_model/slprj/_sfprj/precompile/pR6VONjoy2zgU64cXJaRTB.mat",
-    "docs/Stages/Matlab FFT fixed point model.md",
-    "docs/Stages/Matlab fp FFT model.md",
-    "docs/images/Matlab_fp_FFT_2024-07-21.png",
     "docs/Stages/peripheral drivers in cpp.md",
-    "docs/Stages/Workflow.canvas",
     "All FPGA basic components.md",
     "README.md",
     "Stages/Workflow.md"
