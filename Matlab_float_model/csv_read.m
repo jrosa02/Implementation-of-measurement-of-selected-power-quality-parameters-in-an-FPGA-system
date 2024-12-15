@@ -1,4 +1,4 @@
-addpath("eng_csv");
+addpath("../eng_csv");
 
 % Open the file
 fid = fopen('Uabc_3', 'r');
@@ -16,5 +16,5 @@ data = cell2mat(data);
 
 signal_1 = data(:, 1:2);
 
-figure;
-plot(signal_1(:, 1), signal_1(:, 2));
+%figure;
+%plot(signal_1(:, 1), signal_1(:, 2));
