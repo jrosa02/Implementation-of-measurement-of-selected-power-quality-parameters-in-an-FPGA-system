@@ -1,0 +1,6 @@
+Count - 2
+hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/Sample
+and Hold2
+hdl_model_fixed/Subsystem1/Subsystem Reference/Sample
+and Hold1
+

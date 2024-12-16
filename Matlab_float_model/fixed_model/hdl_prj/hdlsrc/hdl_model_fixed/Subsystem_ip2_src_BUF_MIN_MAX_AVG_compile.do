@@ -1,0 +1,6 @@
+vlib work
+vlog  Subsystem_ip2_src_BUF_MIN_MAX_AVG_tc.v
+vlog  Subsystem_ip2_src_Sample_and_Hold1.v
+vlog  Subsystem_ip2_src_Sample_and_Hold2.v
+vlog  Subsystem_ip2_src_S_R_Flip_Flop.v
+vlog  Subsystem_ip2_src_BUF_MIN_MAX_AVG.v

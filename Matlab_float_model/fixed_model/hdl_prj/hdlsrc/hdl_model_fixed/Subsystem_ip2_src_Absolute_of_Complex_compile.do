@@ -1,0 +1,7 @@
+vlib work
+vlog  Subsystem_ip2_src_cordicSquareRootHDL.v
+vlog  Subsystem_ip2_src_Synchronous_Subsystem.v
+vlog  Subsystem_ip2_src_Bit_Shift_Arithmetic.v
+vlog  Subsystem_ip2_src_Cast_to_Union_of_Types.v
+vlog  Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized1.v
+vlog  Subsystem_ip2_src_Absolute_of_Complex.v

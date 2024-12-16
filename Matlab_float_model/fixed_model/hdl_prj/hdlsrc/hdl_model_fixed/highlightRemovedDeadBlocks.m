@@ -1,0 +1,16 @@
+cs.HiliteType = 'user1';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'red';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Compare To Zero','user1');
+hilite_system('hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Data Type Duplicate','user1');
+hilite_system('hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Compare To Zero/Compare','user1');
+hilite_system('hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Compare To Zero/Constant','user1');
+hilite_system('hdl_model_fixed/Subsystem1/Subsystem Reference/CORDIC Square Root HDL Optimized/Compare To Zero','user1');
+hilite_system('hdl_model_fixed/Subsystem1/Subsystem Reference/CORDIC Square Root HDL Optimized/Compare To Zero/Compare','user1');
+hilite_system('hdl_model_fixed/Subsystem1/Subsystem Reference/CORDIC Square Root HDL Optimized/Compare To Zero/Constant','user1');
+hilite_system('hdl_model_fixed/Subsystem1/Subsystem Reference/CORDIC Square Root HDL Optimized/Data Type Duplicate','user1');
+hilite_system('hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/CORDIC Square Root HDL Optimized1/Compare To Zero','user1');
+hilite_system('hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/CORDIC Square Root HDL Optimized1/Compare To Zero/Compare','user1');
+hilite_system('hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/CORDIC Square Root HDL Optimized1/Compare To Zero/Constant','user1');
+hilite_system('hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/CORDIC Square Root HDL Optimized1/Data Type Duplicate','user1');

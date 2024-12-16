@@ -1,0 +1,11 @@
+-ID:/AGH_Files/Implementation-of-measurement-of-selected-power-quality-parameters-in-an-FPGA-system/Matlab_float_model
+-ID:/AGH_Files/Implementation-of-measurement-of-selected-power-quality-parameters-in-an-FPGA-system/Matlab_float_model/slprj/raccel/fixed_model
+-IC:/Program\ Files/MATLAB/R2024a/rtw/c/src/rapid
+-IC:/Program\ Files/MATLAB/R2024a/rtw/c/raccel
+-IC:/Program\ Files/MATLAB/R2024a/rtw/c/src/ext_mode/common
+-IC:/Program\ Files/MATLAB/R2024a/toolbox/coder/rtiostream/src
+-IC:/Program\ Files/MATLAB/R2024a/extern/include
+-IC:/Program\ Files/MATLAB/R2024a/simulink/include
+-IC:/Program\ Files/MATLAB/R2024a/rtw/c/src
+-IC:/Program\ Files/MATLAB/R2024a/toolbox/coder/rtiostream/src/rtiostreamtcpip
+-IC:/Program\ Files/MATLAB/R2024a/toolbox/coder/rtiostream/src/utils
