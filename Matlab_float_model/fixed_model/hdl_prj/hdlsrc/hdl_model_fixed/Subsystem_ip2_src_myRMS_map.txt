@@ -1,8 +1,0 @@
-hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Synchronous Subsystem/cordicSquareRootHDL --> Subsystem_ip2_src_cordicSquareRootHDL
-hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Synchronous Subsystem --> Subsystem_ip2_src_Synchronous_Subsystem
-hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Bit Shift Arithmetic --> Subsystem_ip2_src_Bit_Shift_Arithmetic
-hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Cast to Union of Types --> Subsystem_ip2_src_Cast_to_Union_of_Types
-hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized --> Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized
-hdl_model_fixed/Subsystem1/myRMS/Sample and Hold --> Subsystem_ip2_src_Sample_and_Hold
-hdl_model_fixed/Subsystem1/myRMS/S-R Flip Flop --> Subsystem_ip2_src_S_R_Flip_Flop
-hdl_model_fixed/Subsystem1/myRMS --> Subsystem_ip2_src_myRMS

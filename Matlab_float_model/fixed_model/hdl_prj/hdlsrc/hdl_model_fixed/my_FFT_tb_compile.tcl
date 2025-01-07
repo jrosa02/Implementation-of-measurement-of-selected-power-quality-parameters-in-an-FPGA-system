@@ -1,0 +1,12 @@
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/TWDLROM.v
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/MINRESRX2FFT_CTRL.v
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/SimpleDualPortRAM_generic.v
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/MINRESRX2FFT_MEMORY.v
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/MINRESRX2FFT_BTFSEL.v
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/Complex4Multiply.v
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/MINRESRX2_BUTTERFLY.v
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/MINRESRX2FFT_MEMSEL.v
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/MINRESRX2FFT_OUTMux.v
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/FFT.v
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/my_FFT.v
+add_files -fileset sim_1 -norecurse D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/hdlsrc/hdl_model_fixed/my_FFT_tb.v

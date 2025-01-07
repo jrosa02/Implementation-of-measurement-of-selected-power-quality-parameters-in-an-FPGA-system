@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/fil_prj/filsrc/Subsystem1_fil.xdc rfile:../../../../filsrc/Subsystem1_fil.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN L16 [get_ports sysclk]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R18 [get_ports sysrst]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_clock_groups -asynchronous -group TCK -group [get_clocks clk_out1_clk_wiz_0]

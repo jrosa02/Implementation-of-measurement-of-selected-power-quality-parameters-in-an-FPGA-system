@@ -5,18 +5,18 @@ Generated logfile:
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Mon Dec 16 16:16:08 2024
+  **** Start of session at: Sat Dec 21 15:37:53 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source vivado_ip_package.tcl -notrace
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/ipcore/Subsystem_ip2_v1_0/prj_ip'
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 514.148 ; gain = 201.609
+Current project path is 'D:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/ipcore/Subsystem_ip2_v2_3/prj_ip'
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 552.398 ; gain = 235.707
 CRITICAL WARNING: [Vivado 12-3645] Please note that adding or importing multiple files, one at a time, can be performance intensive.  Both add_files and import_files commands accept multiple files as input, and passing a collection of multiple files to a single add_files or import_files commands can offer significant performance improvement.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/ipcore'.
-WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/ipcore' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/ipcore/Subsystem_ip2_v1_0/prj_ip'.)
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/ipcore' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/AGH_Files/Eng_Proj/Matlab_float_model/fixed_model/hdl_prj/ipcore/Subsystem_ip2_v2_3/prj_ip'.)
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/tools/Xilinx/Vivado/2024.1/data/ip'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Stream_Master' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
 INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Stream_Slave' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
@@ -38,107 +38,107 @@ WARNING: [IP_Flow 19-5661] Bus Interface 'IPCORE_CLK' does not have any bus inte
 WARNING: [IP_Flow 19-11770] Clock interface 'IPCORE_CLK' has no FREQ_HZ parameter.
 INFO: [IP_Flow 19-2181] Payment is not required for this core.
 WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Subsystem1_tc.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Subsystem1_tc.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold2.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold2.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_S_R_Flip_Flop.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_S_R_Flip_Flop.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_BUF_MIN_MAX_AVG.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_BUF_MIN_MAX_AVG.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_cordicSquareRootHDL.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_cordicSquareRootHDL.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Synchronous_Subsystem.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Synchronous_Subsystem.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Cast_to_Union_of_Types.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Cast_to_Union_of_Types.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Bit_Shift_Arithmetic.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Bit_Shift_Arithmetic.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Absolute_of_Complex.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Absolute_of_Complex.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_cordicSquareRootHDL_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_cordicSquareRootHDL_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Synchronous_Subsystem_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Synchronous_Subsystem_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Cast_to_Union_of_Types_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Cast_to_Union_of_Types_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Bit_Shift_Arithmetic_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Bit_Shift_Arithmetic_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Variable_Right_Shift.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Variable_Right_Shift.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Variable_Left_Shift.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Variable_Left_Shift.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Cast_to_Union_of_Types_block1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Cast_to_Union_of_Types_block1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Shift_and_cast_to_output_type.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Shift_and_cast_to_output_type.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_positiveRealNormalizer.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_positiveRealNormalizer.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Normalize_numerator.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Normalize_numerator.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_positiveRealNormalizer_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_positiveRealNormalizer_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Normalize_denominator.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Normalize_denominator.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_normalizedCORDICDivide.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_normalizedCORDICDivide.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Divide_real_numerator_by_denominator.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Divide_real_numerator_by_denominator.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Compare_To_Zero.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Compare_To_Zero.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Divide_by_zero_handler.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Divide_by_zero_handler.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Upcast_Wordlength.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Upcast_Wordlength.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_MATLAB_Function.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_MATLAB_Function.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_ForEach_Real_Divide.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_ForEach_Real_Divide.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Verify_divide_sizes.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Verify_divide_sizes.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_y_u_1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_y_u_1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Reshape_to_original_size.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Reshape_to_original_size.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Real_Divide_HDL_Optimized.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Real_Divide_HDL_Optimized.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Select_Freq.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Select_Freq.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold2_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold2_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold1_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold1_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_S_R_Flip_Flop_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_S_R_Flip_Flop_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Subsystem_Reference.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Subsystem_Reference.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_cordicSquareRootHDL_block1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_cordicSquareRootHDL_block1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Synchronous_Subsystem_block1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Synchronous_Subsystem_block1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Cast_to_Union_of_Types_block2.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Cast_to_Union_of_Types_block2.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Bit_Shift_Arithmetic_block1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Bit_Shift_Arithmetic_block1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_S_R_Flip_Flop_block1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_S_R_Flip_Flop_block1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and_Hold_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_myRMS.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_myRMS.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SimpleDualPortRAM_generic.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
-WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SimpleDualPortRAM_generic.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Detect_Dec.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Detect_Dec.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Detect_Inc.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Detect_Inc.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Sample_and.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_MATLAB_Fun.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_MATLAB_Fun.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_MATLAB_Fun_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_MATLAB_Fun_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_S_R_Flip_F.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_S_R_Flip_F.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_BUF_MIN_MA.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_BUF_MIN_MA.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SimpleDual.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SimpleDual.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block2.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block2.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_TWDLROM_3.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_TWDLROM_3.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Complex4Mu.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Complex4Mu.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block3.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block3.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block4.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block4.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block2.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block2.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block5.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block5.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block6.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block6.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_TWDLROM_5.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_TWDLROM_5.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Complex4Mu_block.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Complex4Mu_block.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block3.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block3.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block7.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block7.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block8.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block8.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block4.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block4.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block9.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block9.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block10.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block10.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_TWDLROM_7.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_TWDLROM_7.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Complex4Mu_block1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Complex4Mu_block1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block5.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block5.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block11.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block11.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block12.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block12.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block6.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block6.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block13.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block13.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block14.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block14.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_TWDLROM_9.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_TWDLROM_9.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Complex4Mu_block2.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Complex4Mu_block2.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block7.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block7.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block15.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block15.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block16.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block16.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block8.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block8.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block17.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block17.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block18.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block18.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_TWDLROM_11.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_TWDLROM_11.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Complex4Mu_block3.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_Complex4Mu_block3.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block9.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_SDFCommuta_block9.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block19.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/Subsystem_ip2_src_RADIX22FFT_block19.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
 INFO: [Common 17-14] Message 'IP_Flow 19-1971' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 16:16:27 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 21 15:38:12 2024...
 
-Elapsed time is 21.2255 seconds.
+Elapsed time is 20.5598 seconds.

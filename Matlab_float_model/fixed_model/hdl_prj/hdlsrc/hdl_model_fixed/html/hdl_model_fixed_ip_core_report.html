@@ -58,19 +58,19 @@ thead.reportTableHeader {
 <tr>
 <td>IP core version
 </td>
-<td class="summaryTableSndColEvenRow">1.0
+<td class="summaryTableSndColEvenRow">2.3
 </td>
 </tr>
 <tr>
 <td class="distinctCellColor">IP core folder
 </td>
-<td class="summaryTableSndColOddRow"><a href="matlab:uiopen('hdl_prj\ipcore\Subsystem_ip2_v1_0\*.*')">hdl_prj\ipcore\Subsystem_ip2_v1_0</a>
+<td class="summaryTableSndColOddRow"><a href="matlab:uiopen('hdl_prj\ipcore\Subsystem_ip2_v2_3\*.*')">hdl_prj\ipcore\Subsystem_ip2_v2_3</a>
 </td>
 </tr>
 <tr>
 <td>IP core zip file name
 </td>
-<td class="summaryTableSndColEvenRow">Subsystem_ip2_v1_0.zip
+<td class="summaryTableSndColEvenRow">Subsystem_ip2_v2_3.zip
 </td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ thead.reportTableHeader {
 <tr>
 <td class="distinctCellColor">Model version
 </td>
-<td class="summaryTableSndColOddRow">1.55
+<td class="summaryTableSndColOddRow">1.113
 </td>
 </tr>
 <tr>
@@ -112,7 +112,7 @@ thead.reportTableHeader {
 <tr>
 <td class="distinctCellColor">IP core generated on
 </td>
-<td class="summaryTableSndColOddRow">16-Dec-2024 16:16:00
+<td class="summaryTableSndColOddRow">21-Dec-2024 15:37:45
 </td>
 </tr>
 <tr>
@@ -158,7 +158,7 @@ Target platform interface table:
 </td>
 <td>Inport
 </td>
-<td>sfix12_En11
+<td>uint32
 </td>
 <td>AXI4-Stream Slave
 </td>
@@ -200,7 +200,7 @@ Target platform interface table:
 </td>
 <td class="distinctCellColor">Outport
 </td>
-<td class="distinctCellColor">sfix16_En11
+<td class="distinctCellColor">uint32
 </td>
 <td class="distinctCellColor">AXI4-Stream Master
 </td>
@@ -228,7 +228,7 @@ Target platform interface table:
 </td>
 <td class="distinctCellColor">Outport
 </td>
-<td class="distinctCellColor">ufix16_En16
+<td class="distinctCellColor">uint32
 </td>
 <td class="distinctCellColor">AXI4-Lite
 </td>
@@ -242,7 +242,7 @@ Target platform interface table:
 </td>
 <td>Outport
 </td>
-<td>sfix16_En15
+<td>uint32
 </td>
 <td>AXI4-Lite
 </td>
@@ -256,7 +256,7 @@ Target platform interface table:
 </td>
 <td class="distinctCellColor">Outport
 </td>
-<td class="distinctCellColor">sfix18_En10
+<td class="distinctCellColor">uint32
 </td>
 <td class="distinctCellColor">AXI4-Lite
 </td>
@@ -270,7 +270,7 @@ Target platform interface table:
 </td>
 <td>Outport
 </td>
-<td>ufix16_En7
+<td>uint32
 </td>
 <td>AXI4-Lite
 </td>
@@ -284,7 +284,7 @@ Target platform interface table:
 </td>
 <td class="distinctCellColor">Outport
 </td>
-<td class="distinctCellColor">boolean
+<td class="distinctCellColor">ufix4
 </td>
 <td class="distinctCellColor">AXI4-Lite
 </td>
@@ -341,7 +341,7 @@ The following AXI4-Lite bus accessible registers were generated for this IP core
 </td>
 <td class="distinctCellColor">0xC
 </td>
-<td class="distinctCellColor">contains unique IP timestamp (yymmddHHMM): 2412161616
+<td class="distinctCellColor">contains unique IP timestamp (yymmddHHMM): 2412211537
 </td>
 </tr>
 <tr>
@@ -395,11 +395,11 @@ The following AXI4-Lite bus accessible registers were generated for this IP core
 </tbody>
 </table>
 <br/>
-The AXI4 slave write register readback is OFF for the IP core.
+The AXI4 slave write register readback is ON for the IP core.
 <br/>
 The register address mapping is also in the following C header file for you to use when programming the processor:
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\include\Subsystem_ip2_addr.h')">include\Subsystem_ip2_addr.h</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\include\Subsystem_ip2_addr.h')">include\Subsystem_ip2_addr.h</a>
 <br/>
 The IP core name is appended to the register names to avoid name conflicts.
 </div>
@@ -421,7 +421,7 @@ The AXI4-Stream interfaces can be connected to the processor via a DMA controlle
 <br/><br/>
 The AXI4 Slave port to pipeline register ratio selected as 35 in task 3.2 for this model. The default delay to read AXI4 register is one clock cycle.
 Depending on the selected ratio and IO connected to AXI4 interface, register pipelining is introduced in the read logic of AXI4 registers.
-For your model AXI4 pipeline register ratio setting 35 is larger than all the readable AXI4 slave registers. Total readable AXI4 slave registers are 6, so no pipelining is added to the AXI4 register read back logic.
+For your model AXI4 pipeline register ratio setting 35 is larger than all the readable AXI4 slave registers. Total readable AXI4 slave registers are 9, so no pipelining is added to the AXI4 register read back logic.
 <br/><br/>
 <b>Processor/FPGA Synchronization</b>
 <br/><br/>
@@ -430,17 +430,6 @@ The
 mode means there is no explicit synchronization between embedded processor software execution (SW) and the IP core (HW). SW and HW runs independently. The data written from the processor to IP core takes effect immediately, and the data read from the IP core is the latest data available on the IP core output ports. 
 <br/><br/>
 <img src="free_running.jpg"/>
-<br/><br/>
-<b>Vector Data Read/Write with Strobe Synchronization</b>
-<br/><br/>
-Vector data and data whose bit width is wider than the AXI4 register width (32 bits) use multiple registers and therefore require multiple sequential AXI4 reads/writes. All such data is treated as synchronous to the IP core algorithm logic. Additional strobe registers added for each such input and output port maintain this synchronization across multiple sequential AXI4 reads/writes. For input ports, the strobe register controls the enables on a set of shadow registers, allowing the IP core logic to see all the updated data elements simultaneously. For output ports, the strobe register controls the synchronous capturing of data elements to be read.
-<br/><br/>
-To read a data port that uses multiple registers, first write the strobe address with 0x1, then read each desired data element from corresponding address range. To write a data port that uses multiple registers, first write each desired data element, then write 0x1 to the strobe address to complete the transaction.
-<br/><br/>
-To read data whose bit width is wider than the AXI4 register width (32 bits), the individual 32-bit data elements should be concatenated after reading. For write operations, the data should be sliced into 32-bit sections before writing.
-<br/><br/>
-<img src="vector_strobe.jpg"/>
-<br/><br/>
 <br/><br/>
 <b>Xilinx Vivado Environment Integration</b>
 <br/><br/>
@@ -470,246 +459,250 @@ If you are targeting Xilinx Zynq hardwares supported by HDL Coder Support Packag
 <h3 class="sectionHeading">IP Core File List</h3>
 The IP core folder is located at:
 <br/>
-<a href="matlab:uiopen('hdl_prj\ipcore\Subsystem_ip2_v1_0\*.*')">hdl_prj\ipcore\Subsystem_ip2_v1_0</a>
+<a href="matlab:uiopen('hdl_prj\ipcore\Subsystem_ip2_v2_3\*.*')">hdl_prj\ipcore\Subsystem_ip2_v2_3</a>
 <br/>
 Following files are generated under this folder:
 <br/><br/>
 <b>IP core zip file</b>
 <br/>
-<a href="matlab:uiopen('hdl_prj\ipcore\Subsystem_ip2_v1_0\*.*')">Subsystem_ip2_v1_0.zip</a>
+<a href="matlab:uiopen('hdl_prj\ipcore\Subsystem_ip2_v2_3\*.*')">Subsystem_ip2_v2_3.zip</a>
 <br/><br/>
 <b>IP core report</b>
 <br/>
-<a href="matlab:web('hdl_prj\ipcore\Subsystem_ip2_v1_0\doc\hdl_model_fixed_ip_core_report.html')">doc\hdl_model_fixed_ip_core_report.html</a>
+<a href="matlab:web('hdl_prj\ipcore\Subsystem_ip2_v2_3\doc\hdl_model_fixed_ip_core_report.html')">doc\hdl_model_fixed_ip_core_report.html</a>
 <br/><br/>
 <b>IP core HDL source files</b>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Subsystem1_tc.v')">hdl\Subsystem_ip2_src_Subsystem1_tc.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Detect_Dec.v')">hdl\Subsystem_ip2_src_Detect_Dec.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Sample_and_Hold1.v')">hdl\Subsystem_ip2_src_Sample_and_Hold1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Detect_Inc.v')">hdl\Subsystem_ip2_src_Detect_Inc.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Sample_and_Hold2.v')">hdl\Subsystem_ip2_src_Sample_and_Hold2.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Sample_and.v')">hdl\Subsystem_ip2_src_Sample_and.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_S_R_Flip_Flop.v')">hdl\Subsystem_ip2_src_S_R_Flip_Flop.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_MATLAB_Fun.v')">hdl\Subsystem_ip2_src_MATLAB_Fun.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_BUF_MIN_MAX_AVG.v')">hdl\Subsystem_ip2_src_BUF_MIN_MAX_AVG.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_MATLAB_Fun_block.v')">hdl\Subsystem_ip2_src_MATLAB_Fun_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_cordicSquareRootHDL.v')">hdl\Subsystem_ip2_src_cordicSquareRootHDL.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_S_R_Flip_F.v')">hdl\Subsystem_ip2_src_S_R_Flip_F.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Synchronous_Subsystem.v')">hdl\Subsystem_ip2_src_Synchronous_Subsystem.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_BUF_MIN_MA.v')">hdl\Subsystem_ip2_src_BUF_MIN_MA.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Cast_to_Union_of_Types.v')">hdl\Subsystem_ip2_src_Cast_to_Union_of_Types.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SimpleDual.v')">hdl\Subsystem_ip2_src_SimpleDual.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Bit_Shift_Arithmetic.v')">hdl\Subsystem_ip2_src_Bit_Shift_Arithmetic.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SDFCommuta.v')">hdl\Subsystem_ip2_src_SDFCommuta.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized1.v')">hdl\Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT.v')">hdl\Subsystem_ip2_src_RADIX22FFT.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Absolute_of_Complex.v')">hdl\Subsystem_ip2_src_Absolute_of_Complex.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_cordicSquareRootHDL_block.v')">hdl\Subsystem_ip2_src_cordicSquareRootHDL_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SDFCommuta_block.v')">hdl\Subsystem_ip2_src_SDFCommuta_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Synchronous_Subsystem_block.v')">hdl\Subsystem_ip2_src_Synchronous_Subsystem_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block1.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Cast_to_Union_of_Types_block.v')">hdl\Subsystem_ip2_src_Cast_to_Union_of_Types_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block2.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block2.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Bit_Shift_Arithmetic_block.v')">hdl\Subsystem_ip2_src_Bit_Shift_Arithmetic_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_TWDLROM_3.v')">hdl\Subsystem_ip2_src_TWDLROM_3.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized.v')">hdl\Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Complex4Mu.v')">hdl\Subsystem_ip2_src_Complex4Mu.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Variable_Right_Shift.v')">hdl\Subsystem_ip2_src_Variable_Right_Shift.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SDFCommuta_block1.v')">hdl\Subsystem_ip2_src_SDFCommuta_block1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Variable_Left_Shift.v')">hdl\Subsystem_ip2_src_Variable_Left_Shift.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block3.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block3.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Cast_to_Union_of_Types_block1.v')">hdl\Subsystem_ip2_src_Cast_to_Union_of_Types_block1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block4.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block4.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Shift_and_cast_to_output_type.v')">hdl\Subsystem_ip2_src_Shift_and_cast_to_output_type.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SDFCommuta_block2.v')">hdl\Subsystem_ip2_src_SDFCommuta_block2.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_positiveRealNormalizer.v')">hdl\Subsystem_ip2_src_positiveRealNormalizer.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block5.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block5.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Normalize_numerator.v')">hdl\Subsystem_ip2_src_Normalize_numerator.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block6.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block6.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_positiveRealNormalizer_block.v')">hdl\Subsystem_ip2_src_positiveRealNormalizer_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_TWDLROM_5.v')">hdl\Subsystem_ip2_src_TWDLROM_5.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Normalize_denominator.v')">hdl\Subsystem_ip2_src_Normalize_denominator.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Complex4Mu_block.v')">hdl\Subsystem_ip2_src_Complex4Mu_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_normalizedCORDICDivide.v')">hdl\Subsystem_ip2_src_normalizedCORDICDivide.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SDFCommuta_block3.v')">hdl\Subsystem_ip2_src_SDFCommuta_block3.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Divide_real_numerator_by_denominator.v')">hdl\Subsystem_ip2_src_Divide_real_numerator_by_denominator.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block7.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block7.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Compare_To_Zero.v')">hdl\Subsystem_ip2_src_Compare_To_Zero.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block8.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block8.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Divide_by_zero_handler.v')">hdl\Subsystem_ip2_src_Divide_by_zero_handler.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SDFCommuta_block4.v')">hdl\Subsystem_ip2_src_SDFCommuta_block4.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Upcast_Wordlength.v')">hdl\Subsystem_ip2_src_Upcast_Wordlength.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block9.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block9.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_MATLAB_Function.v')">hdl\Subsystem_ip2_src_MATLAB_Function.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block10.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block10.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_ForEach_Real_Divide.v')">hdl\Subsystem_ip2_src_ForEach_Real_Divide.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_TWDLROM_7.v')">hdl\Subsystem_ip2_src_TWDLROM_7.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Verify_divide_sizes.v')">hdl\Subsystem_ip2_src_Verify_divide_sizes.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Complex4Mu_block1.v')">hdl\Subsystem_ip2_src_Complex4Mu_block1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_y_u_1.v')">hdl\Subsystem_ip2_src_y_u_1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SDFCommuta_block5.v')">hdl\Subsystem_ip2_src_SDFCommuta_block5.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Reshape_to_original_size.v')">hdl\Subsystem_ip2_src_Reshape_to_original_size.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block11.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block11.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Real_Divide_HDL_Optimized.v')">hdl\Subsystem_ip2_src_Real_Divide_HDL_Optimized.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block12.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block12.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Select_Freq.v')">hdl\Subsystem_ip2_src_Select_Freq.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SDFCommuta_block6.v')">hdl\Subsystem_ip2_src_SDFCommuta_block6.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Sample_and_Hold.v')">hdl\Subsystem_ip2_src_Sample_and_Hold.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block13.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block13.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Sample_and_Hold2_block.v')">hdl\Subsystem_ip2_src_Sample_and_Hold2_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block14.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block14.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Sample_and_Hold1_block.v')">hdl\Subsystem_ip2_src_Sample_and_Hold1_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_TWDLROM_9.v')">hdl\Subsystem_ip2_src_TWDLROM_9.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_S_R_Flip_Flop_block.v')">hdl\Subsystem_ip2_src_S_R_Flip_Flop_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Complex4Mu_block2.v')">hdl\Subsystem_ip2_src_Complex4Mu_block2.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Subsystem_Reference.v')">hdl\Subsystem_ip2_src_Subsystem_Reference.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SDFCommuta_block7.v')">hdl\Subsystem_ip2_src_SDFCommuta_block7.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_cordicSquareRootHDL_block1.v')">hdl\Subsystem_ip2_src_cordicSquareRootHDL_block1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block15.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block15.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Synchronous_Subsystem_block1.v')">hdl\Subsystem_ip2_src_Synchronous_Subsystem_block1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block16.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block16.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Cast_to_Union_of_Types_block2.v')">hdl\Subsystem_ip2_src_Cast_to_Union_of_Types_block2.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SDFCommuta_block8.v')">hdl\Subsystem_ip2_src_SDFCommuta_block8.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Bit_Shift_Arithmetic_block1.v')">hdl\Subsystem_ip2_src_Bit_Shift_Arithmetic_block1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block17.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block17.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized_block.v')">hdl\Subsystem_ip2_src_CORDIC_Square_Root_HDL_Optimized_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block18.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block18.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_S_R_Flip_Flop_block1.v')">hdl\Subsystem_ip2_src_S_R_Flip_Flop_block1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_TWDLROM_11.v')">hdl\Subsystem_ip2_src_TWDLROM_11.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Sample_and_Hold_block.v')">hdl\Subsystem_ip2_src_Sample_and_Hold_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Complex4Mu_block3.v')">hdl\Subsystem_ip2_src_Complex4Mu_block3.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_myRMS.v')">hdl\Subsystem_ip2_src_myRMS.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_SDFCommuta_block9.v')">hdl\Subsystem_ip2_src_SDFCommuta_block9.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SimpleDualPortRAM_generic.v')">hdl\Subsystem_ip2_src_SimpleDualPortRAM_generic.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block19.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block19.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SDFCommutator1.v')">hdl\Subsystem_ip2_src_SDFCommutator1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX22FFT_block20.v')">hdl\Subsystem_ip2_src_RADIX22FFT_block20.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_1.v')">hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_RADIX2FFT.v')">hdl\Subsystem_ip2_src_RADIX2FFT.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_1.v')">hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_FFT.v')">hdl\Subsystem_ip2_src_FFT.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SDFCommutator2.v')">hdl\Subsystem_ip2_src_SDFCommutator2.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Subsystem.v')">hdl\Subsystem_ip2_src_Subsystem.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_SDF2_2.v')">hdl\Subsystem_ip2_src_RADIX22FFT_SDF2_2.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_cordicSqua.v')">hdl\Subsystem_ip2_src_cordicSqua.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_2.v')">hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_2.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Synchronou.v')">hdl\Subsystem_ip2_src_Synchronou.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_TWDLROM_3_1.v')">hdl\Subsystem_ip2_src_TWDLROM_3_1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Bit_Shift.v')">hdl\Subsystem_ip2_src_Bit_Shift.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Complex4Multiply.v')">hdl\Subsystem_ip2_src_Complex4Multiply.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Cast_to_Un.v')">hdl\Subsystem_ip2_src_Cast_to_Un.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SDFCommutator3.v')">hdl\Subsystem_ip2_src_SDFCommutator3.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_CORDIC_Squ.v')">hdl\Subsystem_ip2_src_CORDIC_Squ.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_3.v')">hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_3.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Absolute_o.v')">hdl\Subsystem_ip2_src_Absolute_o.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_3.v')">hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_3.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_cordicSqua_block.v')">hdl\Subsystem_ip2_src_cordicSqua_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SDFCommutator4.v')">hdl\Subsystem_ip2_src_SDFCommutator4.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Synchronou_block.v')">hdl\Subsystem_ip2_src_Synchronou_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_SDF2_4.v')">hdl\Subsystem_ip2_src_RADIX22FFT_SDF2_4.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Bit_Shift_block.v')">hdl\Subsystem_ip2_src_Bit_Shift_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_4.v')">hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_4.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Cast_to_Un_block.v')">hdl\Subsystem_ip2_src_Cast_to_Un_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_TWDLROM_5_1.v')">hdl\Subsystem_ip2_src_TWDLROM_5_1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_CORDIC_Squ_block.v')">hdl\Subsystem_ip2_src_CORDIC_Squ_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Complex4Multiply_block.v')">hdl\Subsystem_ip2_src_Complex4Multiply_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Reshape_to.v')">hdl\Subsystem_ip2_src_Reshape_to.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SDFCommutator5.v')">hdl\Subsystem_ip2_src_SDFCommutator5.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Verify_div.v')">hdl\Subsystem_ip2_src_Verify_div.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_5.v')">hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_5.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_y_u_1.v')">hdl\Subsystem_ip2_src_y_u_1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_5.v')">hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_5.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Variable_R.v')">hdl\Subsystem_ip2_src_Variable_R.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SDFCommutator6.v')">hdl\Subsystem_ip2_src_SDFCommutator6.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Variable_L.v')">hdl\Subsystem_ip2_src_Variable_L.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_SDF2_6.v')">hdl\Subsystem_ip2_src_RADIX22FFT_SDF2_6.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Cast_to_Un_block1.v')">hdl\Subsystem_ip2_src_Cast_to_Un_block1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_6.v')">hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_6.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Shift_and.v')">hdl\Subsystem_ip2_src_Shift_and.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_TWDLROM_7_1.v')">hdl\Subsystem_ip2_src_TWDLROM_7_1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_positiveRe.v')">hdl\Subsystem_ip2_src_positiveRe.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Complex4Multiply_block1.v')">hdl\Subsystem_ip2_src_Complex4Multiply_block1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Normalize.v')">hdl\Subsystem_ip2_src_Normalize.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SDFCommutator7.v')">hdl\Subsystem_ip2_src_SDFCommutator7.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_positiveRe_block.v')">hdl\Subsystem_ip2_src_positiveRe_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_7.v')">hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_7.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Normalize_block.v')">hdl\Subsystem_ip2_src_Normalize_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_7.v')">hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_7.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_normalized.v')">hdl\Subsystem_ip2_src_normalized.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SDFCommutator8.v')">hdl\Subsystem_ip2_src_SDFCommutator8.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Divide_rea.v')">hdl\Subsystem_ip2_src_Divide_rea.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_SDF2_8.v')">hdl\Subsystem_ip2_src_RADIX22FFT_SDF2_8.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Compare_To.v')">hdl\Subsystem_ip2_src_Compare_To.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_8.v')">hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_8.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Divide_by.v')">hdl\Subsystem_ip2_src_Divide_by.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_TWDLROM_9_1.v')">hdl\Subsystem_ip2_src_TWDLROM_9_1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Upcast_Wor.v')">hdl\Subsystem_ip2_src_Upcast_Wor.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Complex4Multiply_block2.v')">hdl\Subsystem_ip2_src_Complex4Multiply_block2.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_MATLAB_Fun_block1.v')">hdl\Subsystem_ip2_src_MATLAB_Fun_block1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SDFCommutator9.v')">hdl\Subsystem_ip2_src_SDFCommutator9.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_ForEach_Re.v')">hdl\Subsystem_ip2_src_ForEach_Re.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_9.v')">hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_9.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Real_Divid.v')">hdl\Subsystem_ip2_src_Real_Divid.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_9.v')">hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_9.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Sample_and_block.v')">hdl\Subsystem_ip2_src_Sample_and_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SDFCommutator10.v')">hdl\Subsystem_ip2_src_SDFCommutator10.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Sample_and_block1.v')">hdl\Subsystem_ip2_src_Sample_and_block1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_SDF2_10.v')">hdl\Subsystem_ip2_src_RADIX22FFT_SDF2_10.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Sample_and_block2.v')">hdl\Subsystem_ip2_src_Sample_and_block2.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_10.v')">hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_10.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Select_Fre.v')">hdl\Subsystem_ip2_src_Select_Fre.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_TWDLROM_11_1.v')">hdl\Subsystem_ip2_src_TWDLROM_11_1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_S_R_Flip_F_block.v')">hdl\Subsystem_ip2_src_S_R_Flip_F_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Complex4Multiply_block3.v')">hdl\Subsystem_ip2_src_Complex4Multiply_block3.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Subsystem_block.v')">hdl\Subsystem_ip2_src_Subsystem_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SDFCommutator11.v')">hdl\Subsystem_ip2_src_SDFCommutator11.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_cordicSqua_block1.v')">hdl\Subsystem_ip2_src_cordicSqua_block1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_11.v')">hdl\Subsystem_ip2_src_RADIX22FFT_SDF1_11.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Synchronou_block1.v')">hdl\Subsystem_ip2_src_Synchronou_block1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_1_block.v')">hdl\Subsystem_ip2_src_RADIX22FFT_CTRL1_1_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Bit_Shift_block1.v')">hdl\Subsystem_ip2_src_Bit_Shift_block1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_RADIX2FFT_bitNatural.v')">hdl\Subsystem_ip2_src_RADIX2FFT_bitNatural.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Cast_to_Un_block2.v')">hdl\Subsystem_ip2_src_Cast_to_Un_block2.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_FFT.v')">hdl\Subsystem_ip2_src_FFT.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_CORDIC_Squ_block1.v')">hdl\Subsystem_ip2_src_CORDIC_Squ_block1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_S_R_Flip_Flop_block2.v')">hdl\Subsystem_ip2_src_S_R_Flip_Flop_block2.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Sample_and_block3.v')">hdl\Subsystem_ip2_src_Sample_and_block3.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_SimpleDualPortRAM_generic_block.v')">hdl\Subsystem_ip2_src_SimpleDualPortRAM_generic_block.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_S_R_Flip_F_block1.v')">hdl\Subsystem_ip2_src_S_R_Flip_F_block1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_src_Subsystem1.v')">hdl\Subsystem_ip2_src_Subsystem1.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_myRMS.v')">hdl\Subsystem_ip2_src_myRMS.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_reset_sync.v')">hdl\Subsystem_ip2_reset_sync.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_S_R_Flip_F_block2.v')">hdl\Subsystem_ip2_src_S_R_Flip_F_block2.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_dut.v')">hdl\Subsystem_ip2_dut.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_src_Subsystem1.v')">hdl\Subsystem_ip2_src_Subsystem1.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_SimpleDualPortRAM_generic.v')">hdl\Subsystem_ip2_SimpleDualPortRAM_generic.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_reset_sync.v')">hdl\Subsystem_ip2_reset_sync.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_fifo_data_OUT.v')">hdl\Subsystem_ip2_fifo_data_OUT.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_dut.v')">hdl\Subsystem_ip2_dut.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_SimpleDualPortRAM_singlebit.v')">hdl\Subsystem_ip2_SimpleDualPortRAM_singlebit.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_SimpleDualPort.v')">hdl\Subsystem_ip2_SimpleDualPort.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_fifo_TLAST_OUT.v')">hdl\Subsystem_ip2_fifo_TLAST_OUT.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_fifo_data_OUT.v')">hdl\Subsystem_ip2_fifo_data_OUT.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_axi4_stream_master.v')">hdl\Subsystem_ip2_axi4_stream_master.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_SimpleDualPort_block.v')">hdl\Subsystem_ip2_SimpleDualPort_block.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_fifo_data.v')">hdl\Subsystem_ip2_fifo_data.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_fifo_TLAST_OUT.v')">hdl\Subsystem_ip2_fifo_TLAST_OUT.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_axi4_stream_slave.v')">hdl\Subsystem_ip2_axi4_stream_slave.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_axi4_stream_ma.v')">hdl\Subsystem_ip2_axi4_stream_ma.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_addr_decoder.v')">hdl\Subsystem_ip2_addr_decoder.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_fifo_data.v')">hdl\Subsystem_ip2_fifo_data.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_axi_lite_module.v')">hdl\Subsystem_ip2_axi_lite_module.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_axi4_stream_sl.v')">hdl\Subsystem_ip2_axi4_stream_sl.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2_axi_lite.v')">hdl\Subsystem_ip2_axi_lite.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_addr_decoder.v')">hdl\Subsystem_ip2_addr_decoder.v</a>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\hdl\Subsystem_ip2.v')">hdl\Subsystem_ip2.v</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_axi_lite_modul.v')">hdl\Subsystem_ip2_axi_lite_modul.v</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2_axi_lite.v')">hdl\Subsystem_ip2_axi_lite.v</a>
+<br/>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\hdl\Subsystem_ip2.v')">hdl\Subsystem_ip2.v</a>
 <br/>
 <br/>
 <b>IP core C header file</b>
 <br/>
-<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v1_0\include\Subsystem_ip2_addr.h')">include\Subsystem_ip2_addr.h</a>
+<a href="matlab:edit('hdl_prj\ipcore\Subsystem_ip2_v2_3\include\Subsystem_ip2_addr.h')">include\Subsystem_ip2_addr.h</a>
 </div>
 </body>
 </html>

@@ -36,7 +36,7 @@ hdl_model_fixed
 Model version
 </td>
 <td align="right" valign="top" style="border-style: none">
-1.55
+1.113
 </td>
 
 </tr>
@@ -54,7 +54,7 @@ HDL Coder version
 HDL code generated on
 </td>
 <td align="right" valign="top" style="border-style: none">
-2024-12-16 16:15:43
+2024-12-21 15:37:37
 </td>
 
 </tr>
@@ -102,6 +102,42 @@ Non-default model properties
 <br /><br /><table width="100%" border="1">
 <tr style="background-color: #eeeeff">
 <td align="left" valign="top" style="border-style: none">
+AdaptivePipelining
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+ClockRatePipelining
+</td>
+<td align="right" valign="top" style="border-style: none">
+off
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+DistributedPipelining
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+EnableTestpoints
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
 GenerateValidationModel
 </td>
 <td align="right" valign="top" style="border-style: none">
@@ -111,10 +147,28 @@ on
 </tr>
 <tr style="background-color: #ffffff">
 <td align="left" valign="top" style="border-style: none">
+HDLCodingStandard
+</td>
+<td align="right" valign="top" style="border-style: none">
+Industry
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
 HDLSubsystem
 </td>
 <td align="right" valign="top" style="border-style: none">
 hdl_model_fixed/Subsystem1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+InitializeTestBenchInputs
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
 </td>
 
 </tr>
@@ -147,6 +201,15 @@ hdl_prj
 </tr>
 <tr style="background-color: #ffffff">
 <td align="left" valign="top" style="border-style: none">
+RAMMappingThreshold
+</td>
+<td align="right" valign="top" style="border-style: none">
+10
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
 ResetType
 </td>
 <td align="right" valign="top" style="border-style: none">
@@ -154,7 +217,7 @@ Synchronous
 </td>
 
 </tr>
-<tr style="background-color: #eeeeff">
+<tr style="background-color: #ffffff">
 <td align="left" valign="top" style="border-style: none">
 ScalarizePorts
 </td>
@@ -163,7 +226,7 @@ DUTLevel
 </td>
 
 </tr>
-<tr style="background-color: #ffffff">
+<tr style="background-color: #eeeeff">
 <td align="left" valign="top" style="border-style: none">
 ShareAdders
 </td>
@@ -172,12 +235,21 @@ on
 </td>
 
 </tr>
-<tr style="background-color: #eeeeff">
+<tr style="background-color: #ffffff">
 <td align="left" valign="top" style="border-style: none">
 ShareFloatingPointIPs
 </td>
 <td align="right" valign="top" style="border-style: none">
 off
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+SimulationTool
+</td>
+<td align="right" valign="top" style="border-style: none">
+Xilinx Vivado Simulator
 </td>
 
 </tr>
@@ -204,7 +276,7 @@ Zynq
 SynthesisToolDeviceName
 </td>
 <td align="right" valign="top" style="border-style: none">
-xa7z010
+xc7z010
 </td>
 
 </tr>
@@ -222,7 +294,7 @@ clg400
 SynthesisToolSpeedValue
 </td>
 <td align="right" valign="top" style="border-style: none">
--1I
+-1
 </td>
 
 </tr>
@@ -240,7 +312,7 @@ hdl_prj\hdlsrc
 TargetFrequency
 </td>
 <td align="right" valign="top" style="border-style: none">
-200
+100
 </td>
 
 </tr>
@@ -272,6 +344,15 @@ Warning
 
 </tr>
 <tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+TreatRatesAsHardwareRates
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
 <td align="left" valign="top" style="border-style: none">
 Workflow
 </td>
@@ -306,6 +387,24 @@ Subsystem1
 <br /><br /><table width="100%" border="1">
 <tr style="background-color: #eeeeff">
 <td align="left" valign="top" style="border-style: none">
+AXI4RegisterReadback
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+GenerateDefaultAXI4Slave
+</td>
+<td align="right" valign="top" style="border-style: none">
+off
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
 IPCoreName
 </td>
 <td align="right" valign="top" style="border-style: none">
@@ -314,6 +413,15 @@ Subsystem_ip2
 
 </tr>
 <tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IPCoreVersion
+</td>
+<td align="right" valign="top" style="border-style: none">
+2.3
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
 <td align="left" valign="top" style="border-style: none">
 ProcessorFPGASynchronization
 </td>
@@ -649,6 +757,204 @@ IOInterfaceMapping
 </td>
 <td align="right" valign="top" style="border-style: none">
 x"10C"
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('hdl_model_fixed:309')" name="code2model" class="code2model">
+Subsystem
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture Module )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+GenerateDefaultAXI4Slave
+</td>
+<td align="right" valign="top" style="border-style: none">
+off
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IPCoreVersion
+</td>
+<td align="right" valign="top" style="border-style: none">
+1.7
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+ProcessorFPGASynchronization
+</td>
+<td align="right" valign="top" style="border-style: none">
+Free running
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('hdl_model_fixed:310')" name="code2model" class="code2model">
+reset
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+External Port
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('hdl_model_fixed:311')" name="code2model" class="code2model">
+data
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('hdl_model_fixed:312')" name="code2model" class="code2model">
+data_valid
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Valid
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('hdl_model_fixed:313')" name="code2model" class="code2model">
+Out1
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:coder.internal.code2model('hdl_model_fixed:314')" name="code2model" class="code2model">
+FFT_Val
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Valid
 </td>
 
 </tr>

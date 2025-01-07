@@ -1,0 +1,11 @@
+hdl_model_fixed/Subsystem1/my_FFT/FFT/TWDLROM --> TWDLROM
+hdl_model_fixed/Subsystem1/my_FFT/FFT/MINRESRX2FFT_CTRL --> MINRESRX2FFT_CTRL
+hdl_model_fixed/Subsystem1/my_FFT/FFT/MINRESRX2FFT_MEMORY/SimpleDualPortRAM_generic --> SimpleDualPortRAM_generic
+hdl_model_fixed/Subsystem1/my_FFT/FFT/MINRESRX2FFT_MEMORY --> MINRESRX2FFT_MEMORY
+hdl_model_fixed/Subsystem1/my_FFT/FFT/MINRESRX2FFT_BTFSEL --> MINRESRX2FFT_BTFSEL
+hdl_model_fixed/Subsystem1/my_FFT/FFT/MINRESRX2_BUTTERFLY/Complex4Multiply --> Complex4Multiply
+hdl_model_fixed/Subsystem1/my_FFT/FFT/MINRESRX2_BUTTERFLY --> MINRESRX2_BUTTERFLY
+hdl_model_fixed/Subsystem1/my_FFT/FFT/MINRESRX2FFT_MEMSEL --> MINRESRX2FFT_MEMSEL
+hdl_model_fixed/Subsystem1/my_FFT/FFT/MINRESRX2FFT_OUTMux --> MINRESRX2FFT_OUTMux
+hdl_model_fixed/Subsystem1/my_FFT/FFT --> FFT
+hdl_model_fixed/Subsystem1/my_FFT --> my_FFT

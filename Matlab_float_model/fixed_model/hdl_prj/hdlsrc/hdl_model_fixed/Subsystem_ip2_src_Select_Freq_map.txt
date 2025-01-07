@@ -1,1 +1,0 @@
-hdl_model_fixed/Subsystem1/Subsystem Reference/Select_Freq --> Subsystem_ip2_src_Select_Freq

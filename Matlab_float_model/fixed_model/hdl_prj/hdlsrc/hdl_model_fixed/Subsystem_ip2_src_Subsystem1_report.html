@@ -48,33 +48,33 @@
  <div class="page_container"><div class="content_frame">
 <h1>HDL Code Generation Check Report for 'hdl_model_fixed/Subsystem1'
 <a href="matlab:open_system('hdl_model_fixed/Subsystem1');">open model 'hdl_model_fixed/Subsystem1'</a><BR>
-Generated on 2024-12-16 16:15:53</h1>
+Generated on 2024-12-21 15:37:38</h1>
 <H2>HDL check for 'hdl_model_fixed' complete with 0 errors, 2 warnings, and 3 messages.</H2><BR>
 <H3>The following table describes blocks for which errors, warnings or messages were reported.</H3><BR>
 <TABLE style="border: 2px solid; border-collapse: collapse;">
 <TR><TD style="border: 2px solid; border-collapse: collapse;"> <B>Simulink Blocks and resources</B> </TD><TD style="border: 2px solid; border-collapse: collapse;"> <B>Level</B> </TD><TD style="border: 2px solid; border-collapse: collapse;"> <B>Description</B> </TD></TR><TR><TD style="border: 2px solid; border-collapse: collapse;">
-<a alt="hdlcoder:optimization:DelayTransformerElaborationLimit" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');hilite_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100 47 83 117 98 115 121 115 116 101 109 49 47 66 85 70 95 77 73 78 95 77 65 88 95 65 86 71 47 68 101 108 97 121]))">hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/Delay</a>
+<a alt="hdlcoder:validate:OversamplingNotInferred" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');open_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]))">hdl_model_fixed</a>
 </TD>
 <TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
-<TD style="border: 2px solid; border-collapse: collapse">The delay block cannot be optimized because the delay length is larger than 20.</TD>
+<TD style="border: 2px solid; border-collapse: collapse">HDL Coder is unable to determine a valid oversampling factor from the DUT base rate of '100000 kHz' to the 'TargetFrequency' of '100 MHz'. The generated clock corresponds to the DUT base rate. Ensure 'TargetFrequency' is an integer multiple of the DUT base rate.</TD>
 </TR>
 <TR><TD style="border: 2px solid; border-collapse: collapse;">
-<a alt="hdlcoder:makehdl:genericspeednotcharacterized" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');open_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]))">hdl_model_fixed</a>
+<a alt="hdlcoder:validate:IgnoreParamsOnSettingCodingStandardsToIndustry" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');open_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]))">hdl_model_fixed</a>
 </TD>
 <TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
-<TD style="border: 2px solid; border-collapse: collapse">SynthesisToolSpeedValue -1I not characterized for Family Zynq. Using default value, SynthesisToolSpeedValue=1, for adaptive pipelining.</TD>
-</TR>
-<TR><TD style="border: 2px solid; border-collapse: collapse;">
-<a alt="hdlcoder:hdldisp:GeneratingCRPHiliteScript" href="matlab:run('hdl_prj\hdlsrc\hdl_model_fixed\highlightClockRatePipelining')">hdl_prj\hdlsrc\hdl_model_fixed\highlightClockRatePipelining.m</a>
-</TD>
-<TD style="border: 2px solid; border-collapse: collapse">Message</TD>
-<TD style="border: 2px solid; border-collapse: collapse">Clock-rate pipelining obstacles can be diagnosed by running this script: <a href="matlab:run('hdl_prj\hdlsrc\hdl_model_fixed\highlightClockRatePipelining')">hdl_prj\hdlsrc\hdl_model_fixed\highlightClockRatePipelining.m</a></TD>
+<TD style="border: 2px solid; border-collapse: collapse">Parameter 'PackagePostfix, MinimizeClockEnables, MinimizeGlobalResets' will be ignored in hdl_model_fixed when the 'HDL Coding Standard' is set to 'Industry'.</TD>
 </TR>
 <TR><TD style="border: 2px solid; border-collapse: collapse;">
 <a alt="hdlcoder:hdldisp:GeneratingDelayAbsorptionHiliteScript" href="matlab:run('hdl_prj\hdlsrc\hdl_model_fixed\highlightDelayAbsorption')">hdl_prj\hdlsrc\hdl_model_fixed\highlightDelayAbsorption.m</a>
 </TD>
 <TD style="border: 2px solid; border-collapse: collapse">Message</TD>
 <TD style="border: 2px solid; border-collapse: collapse">Delay absorption obstacles can be diagnosed by running this script: <a href="matlab:run('hdl_prj\hdlsrc\hdl_model_fixed\highlightDelayAbsorption')">hdl_prj\hdlsrc\hdl_model_fixed\highlightDelayAbsorption.m</a></TD>
+</TR>
+<TR><TD style="border: 2px solid; border-collapse: collapse;">
+<a alt="hdlcoder:hdldisp:GeneratingDistributedPipeliningBarriersHiliteScript" href="matlab:run('hdl_prj\hdlsrc\hdl_model_fixed\highlightDistributedPipeliningBarriers')">hdl_prj\hdlsrc\hdl_model_fixed\highlightDistributedPipeliningBarriers.m</a>
+</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Message</TD>
+<TD style="border: 2px solid; border-collapse: collapse">To highlight blocks that obstruct distributed pipelining, click the following MATLAB script: <a href="matlab:run('hdl_prj\hdlsrc\hdl_model_fixed\highlightDistributedPipeliningBarriers')">hdl_prj\hdlsrc\hdl_model_fixed\highlightDistributedPipeliningBarriers.m</a></TD>
 </TR>
 <TR><TD style="border: 2px solid; border-collapse: collapse;">
 <a alt="hdlcoder:hdldisp:GeneratingDCEHighlightingScript" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');open_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]))">hdl_model_fixed</a>

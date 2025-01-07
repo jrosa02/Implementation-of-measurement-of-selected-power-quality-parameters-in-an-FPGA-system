@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Subsystem_ip2_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_Subsystem_ip2" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="16,291.688 ns"></ZoomStartTime>
+      <ZoomEndTime time="22,110.150 ns"></ZoomEndTime>
+      <Cursor1Time time="200,820.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="216"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/dut_enable" type="logic">
+      <obj_property name="ElementShortName">dut_enable</obj_property>
+      <obj_property name="ObjectShortName">dut_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/Buffer_rsvd" type="array">
+      <obj_property name="ElementShortName">Buffer_rsvd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Buffer_rsvd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/data_valid" type="logic">
+      <obj_property name="ElementShortName">data_valid</obj_property>
+      <obj_property name="ObjectShortName">data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/user_reset" type="logic">
+      <obj_property name="ElementShortName">user_reset</obj_property>
+      <obj_property name="ObjectShortName">user_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/ce_out" type="logic">
+      <obj_property name="ElementShortName">ce_out</obj_property>
+      <obj_property name="ObjectShortName">ce_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/FFT_Dat" type="array">
+      <obj_property name="ElementShortName">FFT_Dat[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FFT_Dat[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/FFT_Val" type="logic">
+      <obj_property name="ElementShortName">FFT_Val</obj_property>
+      <obj_property name="ObjectShortName">FFT_Val</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/MAX_rsvd" type="array">
+      <obj_property name="ElementShortName">MAX_rsvd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_rsvd[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/MIN_rsvd" type="array">
+      <obj_property name="ElementShortName">MIN_rsvd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">MIN_rsvd[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/THD" type="array">
+      <obj_property name="ElementShortName">THD[15:0]</obj_property>
+      <obj_property name="ObjectShortName">THD[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/RMS" type="array">
+      <obj_property name="ElementShortName">RMS[15:0]</obj_property>
+      <obj_property name="ObjectShortName">RMS[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/VAL_OUT" type="array">
+      <obj_property name="ElementShortName">VAL_OUT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">VAL_OUT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/enb" type="logic">
+      <obj_property name="ElementShortName">enb</obj_property>
+      <obj_property name="ObjectShortName">enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Subsystem_ip2/dut/Subsystem_ip2_dut_inst_1/ce_out_sig" type="logic">
+      <obj_property name="ElementShortName">ce_out_sig</obj_property>
+      <obj_property name="ObjectShortName">ce_out_sig</obj_property>
+   </wvobject>
+</wave_config>

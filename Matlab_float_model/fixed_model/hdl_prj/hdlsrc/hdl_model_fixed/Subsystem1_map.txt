@@ -1,43 +1,90 @@
- --> Subsystem1_pkg
-Subsystem1_tc --> Subsystem1_tc
-hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/Sample and Hold --> Sample_and_Hold
+hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/Detect Decrease1 --> Detect_Decrease1
+hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/Detect Increase --> Detect_Increase
 hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/Sample and Hold1 --> Sample_and_Hold1
-hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/Sample and Hold2 --> Sample_and_Hold2
+hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/MATLAB Function --> MATLAB_Function
+hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/MATLAB Function1 --> MATLAB_Function1
 hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/S-R Flip Flop --> S_R_Flip_Flop
 hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG --> BUF_MIN_MAX_AVG
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_1/SimpleDualPortRAM_generic --> SimpleDualPortRAM_generic
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_1/SDFCommutator1 --> SDFCommutator1
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_1 --> RADIX22FFT_SDF1_1
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_CTRL1_1 --> RADIX22FFT_CTRL1_1
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF2_2/SDFCommutator2 --> SDFCommutator2
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF2_2 --> RADIX22FFT_SDF2_2
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_CTRL1_2 --> RADIX22FFT_CTRL1_2
+hdl_model_fixed/Subsystem1/Subsystem/FFT/TWDLROM_3_1 --> TWDLROM_3_1
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_3/Complex4Multiply --> Complex4Multiply
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_3/SDFCommutator3 --> SDFCommutator3
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_3 --> RADIX22FFT_SDF1_3
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_CTRL1_3 --> RADIX22FFT_CTRL1_3
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF2_4/SDFCommutator4 --> SDFCommutator4
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF2_4 --> RADIX22FFT_SDF2_4
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_CTRL1_4 --> RADIX22FFT_CTRL1_4
+hdl_model_fixed/Subsystem1/Subsystem/FFT/TWDLROM_5_1 --> TWDLROM_5_1
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_5/Complex4Multiply --> Complex4Multiply_block
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_5/SDFCommutator5 --> SDFCommutator5
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_5 --> RADIX22FFT_SDF1_5
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_CTRL1_5 --> RADIX22FFT_CTRL1_5
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF2_6/SDFCommutator6 --> SDFCommutator6
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF2_6 --> RADIX22FFT_SDF2_6
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_CTRL1_6 --> RADIX22FFT_CTRL1_6
+hdl_model_fixed/Subsystem1/Subsystem/FFT/TWDLROM_7_1 --> TWDLROM_7_1
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_7/Complex4Multiply --> Complex4Multiply_block1
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_7/SDFCommutator7 --> SDFCommutator7
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_7 --> RADIX22FFT_SDF1_7
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_CTRL1_7 --> RADIX22FFT_CTRL1_7
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF2_8/SDFCommutator8 --> SDFCommutator8
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF2_8 --> RADIX22FFT_SDF2_8
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_CTRL1_8 --> RADIX22FFT_CTRL1_8
+hdl_model_fixed/Subsystem1/Subsystem/FFT/TWDLROM_9_1 --> TWDLROM_9_1
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_9/Complex4Multiply --> Complex4Multiply_block2
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_9/SDFCommutator9 --> SDFCommutator9
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_9 --> RADIX22FFT_SDF1_9
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_CTRL1_9 --> RADIX22FFT_CTRL1_9
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF2_10/SDFCommutator10 --> SDFCommutator10
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF2_10 --> RADIX22FFT_SDF2_10
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_CTRL1_10 --> RADIX22FFT_CTRL1_10
+hdl_model_fixed/Subsystem1/Subsystem/FFT/TWDLROM_11_1 --> TWDLROM_11_1
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_11/Complex4Multiply --> Complex4Multiply_block3
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_11/SDFCommutator11 --> SDFCommutator11
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_SDF1_11 --> RADIX22FFT_SDF1_11
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX22FFT_CTRL1_1 --> RADIX22FFT_CTRL1_1_block
+hdl_model_fixed/Subsystem1/Subsystem/FFT/RADIX2FFT_bitNatural --> RADIX2FFT_bitNatural
+hdl_model_fixed/Subsystem1/Subsystem/FFT --> FFT
+hdl_model_fixed/Subsystem1/Subsystem --> Subsystem
 hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/CORDIC Square Root HDL Optimized1/Synchronous Subsystem/cordicSquareRootHDL --> cordicSquareRootHDL
 hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/CORDIC Square Root HDL Optimized1/Synchronous Subsystem --> Synchronous_Subsystem
 hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/CORDIC Square Root HDL Optimized1/Bit Shift Arithmetic --> Bit_Shift_Arithmetic
 hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/CORDIC Square Root HDL Optimized1/Cast to Union of Types --> Cast_to_Union_of_Types
-hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/CORDIC Square Root HDL Optimized1 --> CORDIC_Square_Root_HDL_Optimized1
+hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/CORDIC Square Root HDL Optimized1 --> CORDIC_Square_Root_HDL_Optim
 hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex --> Absolute_of_Complex
 hdl_model_fixed/Subsystem1/Subsystem Reference/CORDIC Square Root HDL Optimized/Synchronous Subsystem/cordicSquareRootHDL --> cordicSquareRootHDL_block
 hdl_model_fixed/Subsystem1/Subsystem Reference/CORDIC Square Root HDL Optimized/Synchronous Subsystem --> Synchronous_Subsystem_block
 hdl_model_fixed/Subsystem1/Subsystem Reference/CORDIC Square Root HDL Optimized/Bit Shift Arithmetic --> Bit_Shift_Arithmetic_block
 hdl_model_fixed/Subsystem1/Subsystem Reference/CORDIC Square Root HDL Optimized/Cast to Union of Types --> Cast_to_Union_of_Types_block
-hdl_model_fixed/Subsystem1/Subsystem Reference/CORDIC Square Root HDL Optimized --> CORDIC_Square_Root_HDL_Optimized
+hdl_model_fixed/Subsystem1/Subsystem Reference/CORDIC Square Root HDL Optimized --> CORDIC_Square_Root_HDL_Optim_block
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/Reshape to original size --> Reshape_to_original_size
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/Verify divide sizes --> Verify_divide_sizes
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/y = u(1) --> y_u_1
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Shift and cast to output type/Variable Right Shift --> Variable_Right_Shift
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Shift and cast to output type/Variable Left Shift --> Variable_Left_Shift
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Shift and cast to output type/Cast to Union of Types --> Cast_to_Union_of_Types_block1
-hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Shift and cast to output type --> Shift_and_cast_to_output_type
+hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Shift and cast to output type --> Shift_and_cast_to_output_typ
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Normalize numerator/positiveRealNormalizer --> positiveRealNormalizer
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Normalize numerator --> Normalize_numerator
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Normalize denominator/positiveRealNormalizer --> positiveRealNormalizer_block
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Normalize denominator --> Normalize_denominator
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Divide real numerator by denominator/normalizedCORDICDivide --> normalizedCORDICDivide
-hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Divide real numerator by denominator --> Divide_real_numerator_by_denominator
+hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Divide real numerator by denominator --> Divide_real_numerator_by_den
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Divide by zero handler/Compare To Zero --> Compare_To_Zero
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Divide by zero handler --> Divide_by_zero_handler
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/Upcast Wordlength --> Upcast_Wordlength
-hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/MATLAB Function --> MATLAB_Function
+hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide/MATLAB Function --> MATLAB_Function_block
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized/ForEach - Real Divide --> ForEach_Real_Divide
 hdl_model_fixed/Subsystem1/Subsystem Reference/Real Divide HDL Optimized --> Real_Divide_HDL_Optimized
-hdl_model_fixed/Subsystem1/Subsystem Reference/Sample and Hold --> Sample_and_Hold_block
-hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/Sample and Hold2 --> Sample_and_Hold2_block
-hdl_model_fixed/Subsystem1/Subsystem Reference/Sample and Hold2 --> Sample_and_Hold2_block1
+hdl_model_fixed/Subsystem1/Subsystem Reference/Sample and Hold --> Sample_and_Hold
+hdl_model_fixed/Subsystem1/Subsystem Reference/Sample and Hold1 --> Sample_and_Hold1_block
+hdl_model_fixed/Subsystem1/Subsystem Reference/Sample and Hold2 --> Sample_and_Hold2
 hdl_model_fixed/Subsystem1/Subsystem Reference/Select_Freq --> Select_Freq
 hdl_model_fixed/Subsystem1/Subsystem Reference/S-R Flip Flop --> S_R_Flip_Flop_block
 hdl_model_fixed/Subsystem1/Subsystem Reference --> Subsystem_Reference
@@ -45,56 +92,9 @@ hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Synchronous Su
 hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Synchronous Subsystem --> Synchronous_Subsystem_block1
 hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Bit Shift Arithmetic --> Bit_Shift_Arithmetic_block1
 hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized/Cast to Union of Types --> Cast_to_Union_of_Types_block2
-hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized --> CORDIC_Square_Root_HDL_Optimized_block
-hdl_model_fixed/Subsystem1/myRMS/Sample and Hold --> Sample_and_Hold_block1
+hdl_model_fixed/Subsystem1/myRMS/CORDIC Square Root HDL Optimized --> CORDIC_Square_Root_HDL_Optim_block1
+hdl_model_fixed/Subsystem1/myRMS/Sample and Hold --> Sample_and_Hold_block
 hdl_model_fixed/Subsystem1/myRMS/S-R Flip Flop --> S_R_Flip_Flop_block1
 hdl_model_fixed/Subsystem1/myRMS --> myRMS
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_1/SimpleDualPortRAM_generic --> SimpleDualPortRAM_generic
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_1/SDFCommutator1 --> SDFCommutator1
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_1 --> RADIX22FFT_SDF1_1
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_CTRL1_1 --> RADIX22FFT_CTRL1_1
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF2_2/SDFCommutator2 --> SDFCommutator2
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF2_2 --> RADIX22FFT_SDF2_2
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_CTRL1_2 --> RADIX22FFT_CTRL1_2
-hdl_model_fixed/Subsystem1/FFT/TWDLROM_3_1 --> TWDLROM_3_1
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_3/Complex4Multiply --> Complex4Multiply
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_3/SDFCommutator3 --> SDFCommutator3
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_3 --> RADIX22FFT_SDF1_3
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_CTRL1_3 --> RADIX22FFT_CTRL1_3
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF2_4/SDFCommutator4 --> SDFCommutator4
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF2_4 --> RADIX22FFT_SDF2_4
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_CTRL1_4 --> RADIX22FFT_CTRL1_4
-hdl_model_fixed/Subsystem1/FFT/TWDLROM_5_1 --> TWDLROM_5_1
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_5/Complex4Multiply --> Complex4Multiply_block
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_5/SDFCommutator5 --> SDFCommutator5
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_5 --> RADIX22FFT_SDF1_5
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_CTRL1_5 --> RADIX22FFT_CTRL1_5
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF2_6/SDFCommutator6 --> SDFCommutator6
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF2_6 --> RADIX22FFT_SDF2_6
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_CTRL1_6 --> RADIX22FFT_CTRL1_6
-hdl_model_fixed/Subsystem1/FFT/TWDLROM_7_1 --> TWDLROM_7_1
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_7/Complex4Multiply --> Complex4Multiply_block1
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_7/SDFCommutator7 --> SDFCommutator7
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_7 --> RADIX22FFT_SDF1_7
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_CTRL1_7 --> RADIX22FFT_CTRL1_7
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF2_8/SDFCommutator8 --> SDFCommutator8
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF2_8 --> RADIX22FFT_SDF2_8
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_CTRL1_8 --> RADIX22FFT_CTRL1_8
-hdl_model_fixed/Subsystem1/FFT/TWDLROM_9_1 --> TWDLROM_9_1
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_9/Complex4Multiply --> Complex4Multiply_block2
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_9/SDFCommutator9 --> SDFCommutator9
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_9 --> RADIX22FFT_SDF1_9
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_CTRL1_9 --> RADIX22FFT_CTRL1_9
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF2_10/SDFCommutator10 --> SDFCommutator10
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF2_10 --> RADIX22FFT_SDF2_10
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_CTRL1_10 --> RADIX22FFT_CTRL1_10
-hdl_model_fixed/Subsystem1/FFT/TWDLROM_11_1 --> TWDLROM_11_1
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_11/Complex4Multiply --> Complex4Multiply_block3
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_11/SDFCommutator11 --> SDFCommutator11
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_SDF1_11 --> RADIX22FFT_SDF1_11
-hdl_model_fixed/Subsystem1/FFT/RADIX22FFT_CTRL1_1 --> RADIX22FFT_CTRL1_1_block
-hdl_model_fixed/Subsystem1/FFT/RADIX2FFT_bitNatural --> RADIX2FFT_bitNatural
-hdl_model_fixed/Subsystem1/FFT --> FFT
-hdl_model_fixed/Subsystem1/Sample and Hold --> Sample_and_Hold_block2
 hdl_model_fixed/Subsystem1/S-R Flip Flop --> S_R_Flip_Flop_block2
 hdl_model_fixed/Subsystem1 --> Subsystem1

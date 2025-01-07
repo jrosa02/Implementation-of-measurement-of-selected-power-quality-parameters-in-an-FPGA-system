@@ -1,2 +1,0 @@
-hdl_model_fixed/Subsystem1/Subsystem Reference/Subsystem/Sample and Hold2 --> Subsystem_ip2_src_Sample_and_Hold2
-hdl_model_fixed/Subsystem1/Subsystem Reference/Subsystem --> Subsystem_ip2_src_Subsystem

@@ -1,5 +1,0 @@
-BUF_MIN_MAX_AVG_tc --> Subsystem_ip2_src_BUF_MIN_MAX_AVG_tc
-hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/Sample and Hold1 --> Subsystem_ip2_src_Sample_and_Hold1
-hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/Sample and Hold2 --> Subsystem_ip2_src_Sample_and_Hold2
-hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG/S-R Flip Flop --> Subsystem_ip2_src_S_R_Flip_Flop
-hdl_model_fixed/Subsystem1/BUF_MIN_MAX_AVG --> Subsystem_ip2_src_BUF_MIN_MAX_AVG

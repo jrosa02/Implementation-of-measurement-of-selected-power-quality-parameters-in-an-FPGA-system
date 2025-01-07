@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_rtp_registry/R2023a">
-  <slsa.mm.rtpregistry.ModelMetadata type="slsa.mm.rtpregistry.ModelMetadata" uuid="b4ed5842-8ef4-4bf0-937f-86ae42faa844">
-    <modelName>float_model</modelName>
-  </slsa.mm.rtpregistry.ModelMetadata>
-</MF0>

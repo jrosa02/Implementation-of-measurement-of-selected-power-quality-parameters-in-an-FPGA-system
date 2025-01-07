@@ -48,45 +48,39 @@
  <div class="page_container"><div class="content_frame">
 <h1>HDL Code Generation Check Report for 'hdl_model_fixed/Subsystem1'
 <a href="matlab:open_system('hdl_model_fixed/Subsystem1');">open model 'hdl_model_fixed/Subsystem1'</a><BR>
-Generated on 2024-12-16 09:30:48</h1>
-<H2>HDL check for 'hdl_model_fixed' complete with 0 errors, 6 warnings, and 0 messages.</H2><BR>
+Generated on 2024-12-20 21:02:07</h1>
+<H2>HDL check for 'hdl_model_fixed' complete with 0 errors, 2 warnings, and 3 messages.</H2><BR>
 <H3>The following table describes blocks for which errors, warnings or messages were reported.</H3><BR>
 <TABLE style="border: 2px solid; border-collapse: collapse;">
 <TR><TD style="border: 2px solid; border-collapse: collapse;"> <B>Simulink Blocks and resources</B> </TD><TD style="border: 2px solid; border-collapse: collapse;"> <B>Level</B> </TD><TD style="border: 2px solid; border-collapse: collapse;"> <B>Description</B> </TD></TR><TR><TD style="border: 2px solid; border-collapse: collapse;">
-<a alt="hdlcoder:validate:MultiplyAccumulateXilinxAsyncReset" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');hilite_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100 47 83 117 98 115 121 115 116 101 109 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 77 117 108 116 105 112 108 121 45 65 99 99 117 109 117 108 97 116 101]))">hdl_model_fixed/Subsystem1/Subsystem Reference/Multiply-Accumulate</a>
+<a alt="hdlcoder:validate:OversamplingNotInferred" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');open_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]))">hdl_model_fixed</a>
 </TD>
 <TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
-<TD style="border: 2px solid; border-collapse: collapse">The model has a ResetType setting that may be incompatible for DSP mapping in Xilinx boards. Set the ResetType model property to Synchronous to map registers to DSP.</TD>
+<TD style="border: 2px solid; border-collapse: collapse">HDL Coder is unable to determine a valid oversampling factor from the DUT base rate of '100000 kHz' to the 'TargetFrequency' of '100 MHz'. The generated clock corresponds to the DUT base rate. Ensure 'TargetFrequency' is an integer multiple of the DUT base rate.</TD>
 </TR>
 <TR><TD style="border: 2px solid; border-collapse: collapse;">
-<a alt="hdlcoder:validate:MultiplyAddXilinxAsyncReset" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');hilite_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100 47 83 117 98 115 121 115 116 101 109 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 65 98 115 111 108 117 116 101 32 111 102 32 67 111 109 112 108 101 120 47 77 117 108 116 105 112 108 121 45 65 100 100]))">hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/Multiply-Add</a>
+<a alt="hdlcoder:validate:IgnoreParamsOnSettingCodingStandardsToIndustry" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');open_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]))">hdl_model_fixed</a>
 </TD>
 <TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
-<TD style="border: 2px solid; border-collapse: collapse">The model has a ResetType setting that may be incompatible for DSP mapping in Xilinx boards. Set the ResetType model property to Synchronous to map pipeline registers to DSP.</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Parameter 'PackagePostfix, MinimizeClockEnables, MinimizeGlobalResets' will be ignored in hdl_model_fixed when the 'HDL Coding Standard' is set to 'Industry'.</TD>
 </TR>
 <TR><TD style="border: 2px solid; border-collapse: collapse;">
-<a alt="hdlcoder:validate:MultiplyAddXilinxAsyncReset" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');hilite_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100 47 83 117 98 115 121 115 116 101 109 49 47 83 117 98 115 121 115 116 101 109 32 82 101 102 101 114 101 110 99 101 47 65 98 115 111 108 117 116 101 32 111 102 32 67 111 109 112 108 101 120 47 77 117 108 116 105 112 108 121 45 65 100 100 49]))">hdl_model_fixed/Subsystem1/Subsystem Reference/Absolute of Complex/Multiply-Add1</a>
+<a alt="hdlcoder:hdldisp:GeneratingDelayAbsorptionHiliteScript" href="matlab:run('hdl_prj\hdlsrc\hdl_model_fixed\highlightDelayAbsorption')">hdl_prj\hdlsrc\hdl_model_fixed\highlightDelayAbsorption.m</a>
 </TD>
-<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
-<TD style="border: 2px solid; border-collapse: collapse">The model has a ResetType setting that may be incompatible for DSP mapping in Xilinx boards. Set the ResetType model property to Synchronous to map pipeline registers to DSP.</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Message</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Delay absorption obstacles can be diagnosed by running this script: <a href="matlab:run('hdl_prj\hdlsrc\hdl_model_fixed\highlightDelayAbsorption')">hdl_prj\hdlsrc\hdl_model_fixed\highlightDelayAbsorption.m</a></TD>
 </TR>
 <TR><TD style="border: 2px solid; border-collapse: collapse;">
-<a alt="hdlcoder:validate:MultiplyAccumulateXilinxAsyncReset" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');hilite_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100 47 83 117 98 115 121 115 116 101 109 49 47 109 121 82 77 83 47 77 117 108 116 105 112 108 121 45 65 99 99 117 109 117 108 97 116 101]))">hdl_model_fixed/Subsystem1/myRMS/Multiply-Accumulate</a>
+<a alt="hdlcoder:hdldisp:GeneratingDistributedPipeliningBarriersHiliteScript" href="matlab:run('hdl_prj\hdlsrc\hdl_model_fixed\highlightDistributedPipeliningBarriers')">hdl_prj\hdlsrc\hdl_model_fixed\highlightDistributedPipeliningBarriers.m</a>
 </TD>
-<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
-<TD style="border: 2px solid; border-collapse: collapse">The model has a ResetType setting that may be incompatible for DSP mapping in Xilinx boards. Set the ResetType model property to Synchronous to map registers to DSP.</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Message</TD>
+<TD style="border: 2px solid; border-collapse: collapse">To highlight blocks that obstruct distributed pipelining, click the following MATLAB script: <a href="matlab:run('hdl_prj\hdlsrc\hdl_model_fixed\highlightDistributedPipeliningBarriers')">hdl_prj\hdlsrc\hdl_model_fixed\highlightDistributedPipeliningBarriers.m</a></TD>
 </TR>
 <TR><TD style="border: 2px solid; border-collapse: collapse;">
-<a alt="hdlcoder:validate:MultiplyAccumulateInputFixedTypes" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');hilite_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100 47 83 117 98 115 121 115 116 101 109 49 47 109 121 82 77 83 47 77 117 108 116 105 112 108 121 45 65 99 99 117 109 117 108 97 116 101]))">hdl_model_fixed/Subsystem1/myRMS/Multiply-Accumulate</a>
+<a alt="hdlcoder:hdldisp:GeneratingDCEHighlightingScript" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');open_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]))">hdl_model_fixed</a>
 </TD>
-<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
-<TD style="border: 2px solid; border-collapse: collapse">DSP mapping may not occur for inputs with differing fixed point types.</TD>
-</TR>
-<TR><TD style="border: 2px solid; border-collapse: collapse;">
-<a alt="hdlcoder:validate:MultiplyAddXilinxAsyncReset" href="matlab:hilite(get_param(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100]),'object'),'none');hilite_system(char([104 100 108 95 109 111 100 101 108 95 102 105 120 101 100 47 83 117 98 115 121 115 116 101 109 49 47 109 121 82 77 83 47 77 117 108 116 105 112 108 121 45 65 100 100]))">hdl_model_fixed/Subsystem1/myRMS/Multiply-Add</a>
-</TD>
-<TD style="border: 2px solid; border-collapse: collapse">Warning</TD>
-<TD style="border: 2px solid; border-collapse: collapse">The model has a ResetType setting that may be incompatible for DSP mapping in Xilinx boards. Set the ResetType model property to Synchronous to map pipeline registers to DSP.</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Message</TD>
+<TD style="border: 2px solid; border-collapse: collapse">Unused logic removed during HDL code generation. To highlight the logic removed, click the following MATLAB script: <a href="matlab:run('hdl_prj\hdlsrc\hdl_model_fixed\highlightRemovedDeadBlocks.m')">highlightRemovedDeadBlocks.m</a></TD>
 </TR>
 </TABLE>
 <BR><BR> </div></div></div></div>
